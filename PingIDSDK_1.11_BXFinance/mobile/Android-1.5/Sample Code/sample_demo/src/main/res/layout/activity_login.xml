@@ -1,0 +1,129 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="pingidsdk.pingidentity.com.simpledemo.LoginActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/moderno_image_view"
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo_moderno_mobile"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="6dp"
+            android:scaleType="fitCenter"
+            android:paddingLeft="12dp"
+            android:paddingRight="84dp"
+            android:contentDescription="@string/logo_moderno_mobile"
+            android:layout_height="120dp" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/login_edit_text"
+            android:hint="@string/prompt_username"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/login_edit_text"
+            android:hint="@string/prompt_password"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/signin"
+            android:text="@string/action_sign_in"
+            style="@style/loginButton"
+            android:background="@drawable/drawable_green_button"
+            android:paddingStart="4dp"
+            android:paddingRight="4dp"
+            android:paddingEnd="4dp"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="6dp"
+            />
+
+
+        <Button
+            android:id="@+id/signin_pingfed"
+            android:text="@string/action_sign_in_pingfed"
+            style="@style/loginButton"
+            android:background="@drawable/rounded_pingfed_button"
+            android:paddingStart="4dp"
+            android:paddingRight="4dp"
+            android:paddingEnd="4dp"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="66dp"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copyright"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/version"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonScan_login"
+        android:background="#00FFFFFF"
+        android:gravity="center"
+        android:text="@string/scan"
+        android:textSize="18sp"
+        android:textColor="@color/pingfed_button_color"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mainLayout"/>
+    <include layout="@layout/layout_success"/>
+
+</RelativeLayout>
+
+

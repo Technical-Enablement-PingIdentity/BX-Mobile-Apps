@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BXFinance.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>AC63E1F9B4C321301ADF1E5868B069DF70B4FC37</string>
+				<key>dateExpires</key>
+				<string>2/7/23</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>AC63E1F9B4C321301ADF1E5868B069DF70B4FC37</string>
+						<key>dateExpires</key>
+						<string>2/7/23</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>AppAuth.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>YZYUGL7S48</string>
+						<key>name</key>
+						<string>Ping Identity Corporation</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>AC63E1F9B4C321301ADF1E5868B069DF70B4FC37</string>
+						<key>dateExpires</key>
+						<string>2/7/23</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>PingID_SDK.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>YZYUGL7S48</string>
+						<key>name</key>
+						<string>Ping Identity Corporation</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>YZYUGL7S48.com.pingidentity.sa.demos.bxfinance.prod</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>YZYUGL7S48</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>BXFinance.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d36982f4-135e-4ae3-8a55-01107847725b</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.pingidentity.sa.demos.bxfinance.prod</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>YZYUGL7S48</string>
+				<key>name</key>
+				<string>Ping Identity Corporation</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

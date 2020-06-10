@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
+
+def appVersionCode = getVersionCode();
+
+def APP_VERSION = "1.5"
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "pingidsdk.pingidentity.com.simpledemo"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode appVersionCode
+        versionName APP_VERSION
+        multiDexEnabled true
+        // Make sure this is consistent with the redirect URI used in res/raw/auth_config.json,
+        // or specify additional redirect URIs in AndroidManifest.xml
+        manifestPlaceholders = [
+                'appAuthRedirectScheme': 'pingidsdksample://cb'
+        ]
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/*'
+        exclude 'META-INF/maven'
+    }
+    // In case using your own customer server, this is the server URL.
+    def CUSTOMER_SERVER_BASE_URL = "CUSTOMER_SERVER_BASE_URL"
+
+    // Your App ID taken from the PingOne Admin console.
+    def APP_ID = "APP_ID"
+
+    // In case using PingFederate server, this is the OIDC issuer from which the configuration will be discovered. This is your base PingFederate server URL.
+    def OIDC_ISSUER = "OIDC_ISSUER"
+
+    // The constant DEFAULT_PUSH_SENDER_ID.
+    def PUSH_SENDER_ID = "PUSH_SENDER_ID"
+
+    // In case of doing Root Detection, this is the Google SafeytyNet API key.
+    def DEVICE_VERIFICATION_API_KEY = "DEVICE_VERIFICATION_API_KEY"
+
+    // Is root detection active.
+    def IS_ROOT_DETECTION_ACTIVE = "IS_ROOT_DETECTION_ACTIVE"
+    buildTypes {
+        debug{
+            buildConfigField "String", CUSTOMER_SERVER_BASE_URL, '"<Customer Server URL>"'
+            buildConfigField "String", APP_ID, '"<App ID>"'
+            buildConfigField "String", OIDC_ISSUER, '"<PingFederate Server URL>"'
+            buildConfigField "String", PUSH_SENDER_ID, '"<Push Sender ID>"'
+            buildConfigField "String", DEVICE_VERIFICATION_API_KEY, '"<Android Device Verification API Key>"'
+            buildConfigField "boolean", IS_ROOT_DETECTION_ACTIVE, 'true'
+        }
+        release {
+            buildConfigField "String", CUSTOMER_SERVER_BASE_URL, '"<Customer Server URL>"'
+            buildConfigField "String", APP_ID, '"<App ID>"'
+            buildConfigField "String", OIDC_ISSUER, '"<PingFederate Server URL>"'
+            buildConfigField "String", PUSH_SENDER_ID, '"<Push Sender ID>"'
+            buildConfigField "String", DEVICE_VERIFICATION_API_KEY, '"<Android Device Verification API Key>"'
+            buildConfigField "boolean", IS_ROOT_DETECTION_ACTIVE, 'true'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules_app.pro'
+        }
+    }
+
+    signingConfigs {
+        release {
+        }
+        debug {
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //PingID SDK library dependency
+    implementation (name:'PingID_SDK', ext:'aar')
+    //Dependencies required by the PingID SDK lib
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'com.github.tony19:logback-android:2.0.0'
+
+    implementation 'org.bitbucket.b_c:jose4j:0.7.0'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'commons-codec:commons-codec:1.13'
+    implementation 'com.madgag.spongycastle:bcpkix-jdk15on:1.58.0.0'
+
+    implementation 'com.google.android.gms:play-services-base:17.1.0'
+    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
+
+    //FireCloud Messaging Services
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+
+
+    //demo app dependencies
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    //OAuth2.0 third-party library
+    implementation ('net.openid:appauth:0.7.1') {
+        exclude module: 'support-compat'
+    }
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //implementation 'androidx.browser:browser:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.material:material:1.2.0-alpha04'
+}
+
+//this function retrieves the current version code
+def getVersionCode()  {
+    def Properties versionProps = new Properties()
+    def versionPropsFile = file('version.properties')
+    if (versionPropsFile.exists() && versionPropsFile.canRead()) {
+        versionProps.load(new FileInputStream(versionPropsFile))
+    } else {
+        throw new GradleException("Could not read version.properties!")
+    }
+    def code = (versionProps['VERSION_CODE'] ?: "0").toInteger()
+    return code
+}

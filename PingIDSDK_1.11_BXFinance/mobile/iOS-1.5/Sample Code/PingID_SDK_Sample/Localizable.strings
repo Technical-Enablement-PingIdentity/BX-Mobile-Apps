@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  Moderno by Ping Identity
+
+  Created by Ping Identity on 4/3/17.
+  Copyright © 2017 Ping Identity. All rights reserved.
+ 
+  See LICENSE.txt for this sample’s licensing information and
+  LICENSE_SDK.txt for the PingID SDK library licensing information.
+*/
+
+"trusted_title"     = "Trust Device";
+"primary_message"   = "This will make this device your primary device to be used for mobile banking and authentication.";
+"trusted_message"   = "This will make this device your trusted device to be used for mobile banking and authentication.";
+
+
+"approve"           = "Approve";
+"cancel"            = "Cancel";
+"trust"             = "Trust";
+"deny"              = "Deny";
+"error"             = "Error";
+"sign_out"          = "Sign Out";
+
+"sign_on_title"         = "Sign On Authorization";
+"transaction_title"     = "Transaction Authorization";
+"auth_denied"       = "Authentication was denied";
+"auth_success"      = "Authentication was successful";
+
+"transac_denied"       = "Transaction was denied";
+"transac_success"      = "Transaction was successful";
+
+"auth_timed"        = "Authentication timed out";
+"please_wait"       = "\n\n\n\nPlease wait... ";
+"ok"                = "OK";
+
+"notification_confirm"  = "Approve";
+"notification_deny"     = "Deny";
+"notification.message"  = "You have a new authentication request.";
+"notification.title"    = "New Authentication";

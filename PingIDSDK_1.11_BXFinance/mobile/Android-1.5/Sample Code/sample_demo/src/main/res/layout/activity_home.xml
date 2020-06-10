@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="pingidsdk.pingidentity.com.simpledemo.HomeActivity"
+    android:background="@drawable/gradient"
+    >
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/buttonScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/scan"
+            android:textSize="20sp"
+            android:textColor="@color/pingfed_button_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignTop="@+id/logo">
+        </Button>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_height="50dp"
+            android:src="@drawable/logo_moderno_mobile"
+            android:padding="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/logo_moderno_mobile"
+            android:layout_width="170dp"
+            android:layout_marginTop="16dp"
+            />
+         <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:textSize="20sp"
+            android:textColor="@color/pingfed_button_color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignTop="@+id/logo">
+        </Button>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/logo"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout">
+            <pingidsdk.pingidentity.com.simpledemo.ui.IosTextView
+                android:layout_gravity="center"
+                android:id="@+id/OneTimePasscodeCaptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one_time_passcode_title"
+                android:textSize="22sp"
+                style="@style/regularText" />
+
+            <pingidsdk.pingidentity.com.simpledemo.ui.IosTextView
+                android:id="@+id/OneTimePasscodeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="56sp"
+                style="@style/regularText"
+                android:text="123456"/>
+
+            <Button
+                android:id="@+id/new_passcode_button"
+                android:text="@string/one_time_passcode_button"
+                style="@style/loginButton"
+                android:layout_width="wrap_content"
+                android:background="@drawable/rounded_pingfed_button"
+                android:paddingStart="24dp"
+                android:paddingRight="24dp"
+                android:paddingLeft="24dp"
+                android:paddingEnd="24dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/upper_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <pingidsdk.pingidentity.com.simpledemo.ui.IosTextView
+            android:id="@+id/accountBalanceCaptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_balance"
+            android:layout_below="@+id/logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:textSize="28sp"
+            style="@style/regularText" />
+
+        <pingidsdk.pingidentity.com.simpledemo.ui.IosTextView
+            android:id="@+id/accountBalanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:layout_below="@+id/accountBalanceCaptionTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            style="@style/regularText"
+            />
+
+    </LinearLayout>
+    <include layout="@layout/layout_success"/>
+
+</RelativeLayout>
