@@ -1,0 +1,107 @@
+<resources>
+
+    <string name="app_name">Moderno</string>
+    <!--App config defaults-->
+
+    <!-- FCM Mandatory settings (in order not to have to use the Fcm plugin) - DO NOT REMOVE unless you are using the Fcm plugin-->
+    <!-- client_id -->
+    <string name="default_web_client_id" translatable="false">Default Web Client ID</string>
+
+    <!-- firebase_url-->
+    <string name="firebase_database_url" translatable="false">Firebase Database URL</string>
+
+    <!-- project_number -->
+    <string name="gcm_defaultSenderId" translatable="false">Gcm Default Sender Id</string>
+
+    <!-- mobilesdk_app_id-->
+    <string name="google_app_id" translatable="false">Google App ID</string>
+
+    <!-- storage_bucket-->
+    <string name="google_storage_bucket" translatable="false">Google Storage Bucket</string>
+    <!-- FCM Mandatory -->
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">SIGN ON</string>
+    <string name="action_sign_in_pingfed">SIGN ON WITH PING FEDERATE</string>
+
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_authentication_failed">Authentication failed</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="prompt_otp">Passcode</string>
+    <string name="passcode_prompt_message">Enter the passcode displayed in the mobile app to sign on.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="pushless_mode_on">Pushless mode on</string>
+    <string name="approve">Approve</string>
+    <string name="deny">Deny</string>
+    <string name="app_prefs_title">App Preferences</string>
+    <string name="app_prefs_prompt_app_id">Application Id</string>
+    <string name="app_prefs_prompt_customer_server_url">Customer server URL</string>
+    <string name="app_prefs_prompt_push_sender_id">Push Sender Id</string>
+    <string name="title_activity_home">Home Activity</string>
+    <string name="title_activity_otp">Passcode Activity</string>
+    <string name="send_logs">Send logs</string>
+    <string name="sign_on">Sign On</string>
+    <string name="logout">Sign Out</string>
+    <string name="scan">Scan</string>
+    <string name="add_device_title">Trust Device</string>
+    <string name="add_primary_device_prompt">This will make this device your primary device to be used for mobile banking and authentication.</string>
+    <string name="add_trusted_device_prompt">This will make this device a trusted device to be used for mobile banking and authentication.</string>
+    <string name="app_prefs_are_you_sure_you_want_to_unpair">Are you sure you want to unpair?</string>
+    <string name="app_prefs_are_you_sure">Are you sure?</string>
+    <string name="auth_please_authenticate">Please authenticate</string>
+    <string name="auth_transaction_authorization">Transaction Authorization</string>
+    <string name="auth_please_approve_transfer">Please approve the transfer of </string>
+    <string name="pairing_pairing_now">Thank you, pairing now...</string>
+    <string name="pairing_new_device_will_be_paired">Thank you, the new device will be paired...</string>
+    <string name="pairing_problem">Problem pairing...</string>
+    <string name="pairing_denied">Pairing denied</string>
+    <string name="authentication_denied">Authentication was denied</string>
+    <string name="transaction_denied">Transaction was denied</string>
+    <string name="error_connection_failed">Connection to the customer server failed</string>
+    <string name="error">Error</string>
+    <string name="close">Close</string>
+    <string name="sign_on_authorization">Sign On Authorization</string>
+    <string name="new_auth_notification_title">New Authentication</string>
+    <string name="new_auth_notification_body">You have a new authentication request</string>
+
+    <string name="one_time_passcode_title">One Time Passcode</string>
+    <string name="one_time_passcode_button">NEW PASSCODE </string>
+    <string name="step_up_transfer_between_accounts">Transfer Between Accounts</string>
+    <string name="step_up_accounts"><![CDATA[Checking —> Savings]]></string>
+    <string name="account_balance">Account Balance</string>
+    <string name="copyright">© 2017-%d Moderno</string>
+    <string name="logo_moderno_mobile">logo_moderno_mobile</string>
+    <string name="button_menu">buttonMenu</string>
+
+    <!-- SUCCESS AND FAILURE LAYOUTS -->
+    <string name="authenticated_success">Authenticated</string>
+    <string name="invalid_qr_code">Invalid QR code</string>
+    <!-- FINGERPRINT SECTION -->
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+
+    <string name="fingerprint_description_icon">Fingerprint icon</string>
+    <string name="user_choose_hint">Select the user to sign on as.</string>
+
+    <!-- NOTIFICATION CHANNELS RELATED STRINGS -->
+    <string name="notification_channel_name">Moderno notification channel</string>
+    <string name="notification_channel_description">Moderno notifications</string>
+
+    <string name="customer_server_base_url">customer server base url</string>
+    <string name="oidc_issuer">Oidc issuer</string>
+    <string name="push_sender_id">Push sender id</string>
+    <string name="api_id">Api_id</string>
+    <string name="device_verification_api_key">Device verification api key</string>
+    <string name="reset">reset</string>
+    <string name="content_descriptor_button_reset">content descriptor button reset</string>
+    <string name="root_detection">root detection</string>
+
+</resources>

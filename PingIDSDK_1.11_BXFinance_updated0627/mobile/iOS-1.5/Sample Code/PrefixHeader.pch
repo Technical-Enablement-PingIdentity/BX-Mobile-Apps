@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  Moderno by Ping Identity
+//
+//  Created by Ping Identity on 3/23/17.
+//  Copyright © 2017 Ping Identity. All rights reserved.
+//
+// See LICENSE.txt for this sample’s licensing information and
+// LICENSE_SDK.txt for the PingID SDK library licensing information.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "Constants.h"
+
+#endif /* PrefixHeader_pch */

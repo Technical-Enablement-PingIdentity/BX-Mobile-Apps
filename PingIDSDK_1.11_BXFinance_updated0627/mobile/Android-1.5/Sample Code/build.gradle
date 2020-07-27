@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.8.2'
+        classpath 'com.google.gms:google-services:4.3.3'
+
+    }
+    println "Running gradle version: $gradle.gradleVersion"
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

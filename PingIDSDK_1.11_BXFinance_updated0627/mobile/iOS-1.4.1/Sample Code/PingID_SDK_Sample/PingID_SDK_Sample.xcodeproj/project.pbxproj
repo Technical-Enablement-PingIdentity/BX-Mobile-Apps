@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B015FA91E83B7AC00DBC602 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B015FA81E83B7AC00DBC602 /* LoginViewController.m */; };
+		7B0AB6002056444C00D75F7A /* OneTimePasscodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0AB5FF2056444C00D75F7A /* OneTimePasscodeViewController.m */; };
+		7B42741D2190386C00E6F916 /* UserSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B42741C2190386C00E6F916 /* UserSelectionViewController.m */; };
+		7B4274202190389700E6F916 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B42741F2190389700E6F916 /* UserTableViewCell.m */; };
+		7B8C238D1E83BA0900F0F897 /* CommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C238C1E83BA0900F0F897 /* CommunicationManager.m */; };
+		7B8C23901E83BC1D00F0F897 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C238F1E83BC1D00F0F897 /* Constants.m */; };
+		7B8C23A21E88F36900F0F897 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C23A11E88F36900F0F897 /* HomeViewController.m */; };
+		7B8C23A51E8924F000F0F897 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8C23A41E8924F000F0F897 /* AuthViewController.m */; };
+		7BAB161A1E8BE0A80051BC1D /* LocationServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB16191E8BE0A80051BC1D /* LocationServices.m */; };
+		7BAB16231E8D028E0051BC1D /* HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB16221E8D028E0051BC1D /* HelperMethods.m */; };
+		7BAB164F1E922FE40051BC1D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB164E1E922FE40051BC1D /* Localizable.strings */; };
+		7BBAEA8C2181AF4400A9692C /* QRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBAEA8A2181AF4400A9692C /* QRScannerViewController.m */; };
+		7BC0ACEF20398BED00C468E5 /* AppAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0ACEE20398BED00C468E5 /* AppAuth.framework */; };
+		7BC0ACF020398BED00C468E5 /* AppAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC0ACEE20398BED00C468E5 /* AppAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BC9A3A41EF2B97800EC0A04 /* PingID_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC9A3A31EF2B97800EC0A04 /* PingID_SDK.framework */; };
+		7BC9A3A51EF2B97800EC0A04 /* PingID_SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC9A3A31EF2B97800EC0A04 /* PingID_SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7BE20F371DF97E9B0084779E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE20F361DF97E9B0084779E /* main.m */; };
+		7BE20F3A1DF97E9B0084779E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE20F391DF97E9B0084779E /* AppDelegate.m */; };
+		7BE20F401DF97E9B0084779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE20F3E1DF97E9B0084779E /* Main.storyboard */; };
+		7BE20F421DF97E9B0084779E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE20F411DF97E9B0084779E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B30FECE1DF980A1003121E9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7BC0ACF020398BED00C468E5 /* AppAuth.framework in Embed Frameworks */,
+				7BC9A3A51EF2B97800EC0A04 /* PingID_SDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B015FA71E83B7AC00DBC602 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewControllers/LoginViewController.h; sourceTree = "<group>"; };
+		7B015FA81E83B7AC00DBC602 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewControllers/LoginViewController.m; sourceTree = "<group>"; };
+		7B0AB5FE2056444C00D75F7A /* OneTimePasscodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OneTimePasscodeViewController.h; path = ViewControllers/OneTimePasscodeViewController.h; sourceTree = "<group>"; };
+		7B0AB5FF2056444C00D75F7A /* OneTimePasscodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OneTimePasscodeViewController.m; path = ViewControllers/OneTimePasscodeViewController.m; sourceTree = "<group>"; };
+		7B42741B2190386C00E6F916 /* UserSelectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserSelectionViewController.h; path = ViewControllers/UserSelectionViewController.h; sourceTree = "<group>"; };
+		7B42741C2190386C00E6F916 /* UserSelectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserSelectionViewController.m; path = ViewControllers/UserSelectionViewController.m; sourceTree = "<group>"; };
+		7B42741E2190389700E6F916 /* UserTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserTableViewCell.h; path = ViewControllers/UserTableViewCell.h; sourceTree = "<group>"; };
+		7B42741F2190389700E6F916 /* UserTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserTableViewCell.m; path = ViewControllers/UserTableViewCell.m; sourceTree = "<group>"; };
+		7B831F3F1EF278230034EE86 /* PingID_SDK_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PingID_SDK_Sample.entitlements; sourceTree = "<group>"; };
+		7B8C238B1E83BA0900F0F897 /* CommunicationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommunicationManager.h; path = Communication/CommunicationManager.h; sourceTree = "<group>"; };
+		7B8C238C1E83BA0900F0F897 /* CommunicationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommunicationManager.m; path = Communication/CommunicationManager.m; sourceTree = "<group>"; };
+		7B8C238E1E83BC1D00F0F897 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		7B8C238F1E83BC1D00F0F897 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		7B8C23921E83BF8A00F0F897 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		7B8C23A01E88F36900F0F897 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
+		7B8C23A11E88F36900F0F897 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
+		7B8C23A31E8924F000F0F897 /* AuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthViewController.h; path = ViewControllers/AuthViewController.h; sourceTree = "<group>"; };
+		7B8C23A41E8924F000F0F897 /* AuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthViewController.m; path = ViewControllers/AuthViewController.m; sourceTree = "<group>"; };
+		7BAB16181E8BE0A80051BC1D /* LocationServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationServices.h; path = Location/LocationServices.h; sourceTree = "<group>"; };
+		7BAB16191E8BE0A80051BC1D /* LocationServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationServices.m; path = Location/LocationServices.m; sourceTree = "<group>"; };
+		7BAB16211E8D028E0051BC1D /* HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperMethods.h; sourceTree = "<group>"; };
+		7BAB16221E8D028E0051BC1D /* HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperMethods.m; sourceTree = "<group>"; };
+		7BAB164E1E922FE40051BC1D /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7BBAEA8A2181AF4400A9692C /* QRScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRScannerViewController.m; path = ViewControllers/QRScannerViewController.m; sourceTree = "<group>"; };
+		7BBAEA8D2181B10C00A9692C /* QRScannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QRScannerViewController.h; path = ViewControllers/QRScannerViewController.h; sourceTree = "<group>"; };
+		7BC0ACEE20398BED00C468E5 /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuth.framework; path = ../AppAuth.framework; sourceTree = "<group>"; };
+		7BC9A3A31EF2B97800EC0A04 /* PingID_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PingID_SDK.framework; path = ../PingID_SDK.framework; sourceTree = "<group>"; };
+		7BE20F321DF97E9B0084779E /* PingID_SDK_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingID_SDK_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE20F361DF97E9B0084779E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BE20F381DF97E9B0084779E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BE20F391DF97E9B0084779E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BE20F3F1DF97E9B0084779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BE20F411DF97E9B0084779E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BE20F461DF97E9B0084779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BE20F2F1DF97E9B0084779E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BC0ACEF20398BED00C468E5 /* AppAuth.framework in Frameworks */,
+				7BC9A3A41EF2B97800EC0A04 /* PingID_SDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B8C23891E83B8E200F0F897 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BBAEA8D2181B10C00A9692C /* QRScannerViewController.h */,
+				7BBAEA8A2181AF4400A9692C /* QRScannerViewController.m */,
+				7B015FA71E83B7AC00DBC602 /* LoginViewController.h */,
+				7B015FA81E83B7AC00DBC602 /* LoginViewController.m */,
+				7B8C23A01E88F36900F0F897 /* HomeViewController.h */,
+				7B8C23A11E88F36900F0F897 /* HomeViewController.m */,
+				7B8C23A31E8924F000F0F897 /* AuthViewController.h */,
+				7B8C23A41E8924F000F0F897 /* AuthViewController.m */,
+				7B0AB5FE2056444C00D75F7A /* OneTimePasscodeViewController.h */,
+				7B0AB5FF2056444C00D75F7A /* OneTimePasscodeViewController.m */,
+				7B42741B2190386C00E6F916 /* UserSelectionViewController.h */,
+				7B42741C2190386C00E6F916 /* UserSelectionViewController.m */,
+				7B42741E2190389700E6F916 /* UserTableViewCell.h */,
+				7B42741F2190389700E6F916 /* UserTableViewCell.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7B8C238A1E83B9F300F0F897 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				7B8C238B1E83BA0900F0F897 /* CommunicationManager.h */,
+				7B8C238C1E83BA0900F0F897 /* CommunicationManager.m */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		7BAB16171E8BE07F0051BC1D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB16181E8BE0A80051BC1D /* LocationServices.h */,
+				7BAB16191E8BE0A80051BC1D /* LocationServices.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		7BE20F291DF97E9B0084779E = {
+			isa = PBXGroup;
+			children = (
+				7BC0ACEE20398BED00C468E5 /* AppAuth.framework */,
+				7BC9A3A31EF2B97800EC0A04 /* PingID_SDK.framework */,
+				7BE20F341DF97E9B0084779E /* PingID_SDK_Sample */,
+				7BE20F331DF97E9B0084779E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BE20F331DF97E9B0084779E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BE20F321DF97E9B0084779E /* PingID_SDK_Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BE20F341DF97E9B0084779E /* PingID_SDK_Sample */ = {
+			isa = PBXGroup;
+			children = (
+				7B831F3F1EF278230034EE86 /* PingID_SDK_Sample.entitlements */,
+				7BAB16171E8BE07F0051BC1D /* Location */,
+				7B8C23891E83B8E200F0F897 /* ViewControllers */,
+				7B8C238A1E83B9F300F0F897 /* Communication */,
+				7BE20F381DF97E9B0084779E /* AppDelegate.h */,
+				7BE20F391DF97E9B0084779E /* AppDelegate.m */,
+				7B8C238E1E83BC1D00F0F897 /* Constants.h */,
+				7B8C238F1E83BC1D00F0F897 /* Constants.m */,
+				7BAB16211E8D028E0051BC1D /* HelperMethods.h */,
+				7BAB16221E8D028E0051BC1D /* HelperMethods.m */,
+				7BAB164E1E922FE40051BC1D /* Localizable.strings */,
+				7BE20F3E1DF97E9B0084779E /* Main.storyboard */,
+				7BE20F411DF97E9B0084779E /* Assets.xcassets */,
+				7BE20F461DF97E9B0084779E /* Info.plist */,
+				7BE20F351DF97E9B0084779E /* Supporting Files */,
+				7B8C23921E83BF8A00F0F897 /* PrefixHeader.pch */,
+			);
+			name = PingID_SDK_Sample;
+			sourceTree = "<group>";
+		};
+		7BE20F351DF97E9B0084779E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BE20F361DF97E9B0084779E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BE20F311DF97E9B0084779E /* PingID_SDK_Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE20F491DF97E9B0084779E /* Build configuration list for PBXNativeTarget "PingID_SDK_Sample" */;
+			buildPhases = (
+				7BE20F2E1DF97E9B0084779E /* Sources */,
+				7BE20F2F1DF97E9B0084779E /* Frameworks */,
+				7BE20F301DF97E9B0084779E /* Resources */,
+				7B30FECE1DF980A1003121E9 /* Embed Frameworks */,
+				7BAB16161E8A85840051BC1D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingID_SDK_Sample;
+			productName = ExampleApp;
+			productReference = 7BE20F321DF97E9B0084779E /* PingID_SDK_Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BE20F2A1DF97E9B0084779E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ping Identity";
+				TargetAttributes = {
+					7BE20F311DF97E9B0084779E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YZYUGL7S48;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7BE20F2D1DF97E9B0084779E /* Build configuration list for PBXProject "PingID_SDK_Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 7BE20F291DF97E9B0084779E;
+			productRefGroup = 7BE20F331DF97E9B0084779E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BE20F311DF97E9B0084779E /* PingID_SDK_Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BE20F301DF97E9B0084779E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BE20F421DF97E9B0084779E /* Assets.xcassets in Resources */,
+				7BAB164F1E922FE40051BC1D /* Localizable.strings in Resources */,
+				7BE20F401DF97E9B0084779E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BAB16161E8A85840051BC1D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/PingID_SDK.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BE20F2E1DF97E9B0084779E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4274202190389700E6F916 /* UserTableViewCell.m in Sources */,
+				7BBAEA8C2181AF4400A9692C /* QRScannerViewController.m in Sources */,
+				7BAB16231E8D028E0051BC1D /* HelperMethods.m in Sources */,
+				7B8C23901E83BC1D00F0F897 /* Constants.m in Sources */,
+				7B8C23A51E8924F000F0F897 /* AuthViewController.m in Sources */,
+				7BAB161A1E8BE0A80051BC1D /* LocationServices.m in Sources */,
+				7BE20F3A1DF97E9B0084779E /* AppDelegate.m in Sources */,
+				7B42741D2190386C00E6F916 /* UserSelectionViewController.m in Sources */,
+				7BE20F371DF97E9B0084779E /* main.m in Sources */,
+				7B8C23A21E88F36900F0F897 /* HomeViewController.m in Sources */,
+				7B8C238D1E83BA0900F0F897 /* CommunicationManager.m in Sources */,
+				7B0AB6002056444C00D75F7A /* OneTimePasscodeViewController.m in Sources */,
+				7B015FA91E83B7AC00DBC602 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BE20F3E1DF97E9B0084779E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BE20F3F1DF97E9B0084779E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BE20F471DF97E9B0084779E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 483;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_CURRENT_VERSION = 483;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		7BE20F481DF97E9B0084779E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 483;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_CURRENT_VERSION = 483;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7BE20F4A1DF97E9B0084779E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PingID_SDK_Sample.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 483;
+				DEVELOPMENT_TEAM = YZYUGL7S48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					../,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../PrefixHeader.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingidentity.sdk.demoappTEST;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dfb46ed1-9e2a-4da3-b436-e20ec3d87c6d";
+				PROVISIONING_PROFILE_SPECIFIER = "PingID SDK demo app TEST";
+			};
+			name = Debug;
+		};
+		7BE20F4B1DF97E9B0084779E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PingID_SDK_Sample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 483;
+				DEVELOPMENT_TEAM = YZYUGL7S48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					../,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../PrefixHeader.pch;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.4.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingidentity.sdk.demoappTEST;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b22f5201-3e70-4264-b996-cc75926ec3fd";
+				PROVISIONING_PROFILE_SPECIFIER = "PingID SDK demo app TEST Distribution";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BE20F2D1DF97E9B0084779E /* Build configuration list for PBXProject "PingID_SDK_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE20F471DF97E9B0084779E /* Debug */,
+				7BE20F481DF97E9B0084779E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE20F491DF97E9B0084779E /* Build configuration list for PBXNativeTarget "PingID_SDK_Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BE20F4A1DF97E9B0084779E /* Debug */,
+				7BE20F4B1DF97E9B0084779E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BE20F2A1DF97E9B0084779E /* Project object */;
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:paddingTop="90dp"
+    android:background="@drawable/gradient"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/logo"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_moderno_mobile"
+        android:contentDescription="@string/logo_moderno_mobile"
+        android:layout_width="wrap_content"
+        android:scaleType="fitStart"
+        />
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/passcode_prompt_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        style="@style/regularText"
+        android:text="@string/passcode_prompt_message"/>
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/passcode_input"
+        style="@style/login_edit_text"
+        android:layout_width="match_parent"
+        android:hint="@string/prompt_otp"
+        android:inputType="numberDecimal" />
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:enabled="false"
+        android:id="@+id/signinwithpass"
+        android:text="@string/action_sign_in"
+        style="@style/loginButton"
+        android:background="@drawable/drawable_green_button"
+        android:paddingStart="4dp"
+        android:paddingRight="4dp"
+        android:paddingEnd="4dp"
+        android:gravity="start|center_vertical"
+        android:layout_marginTop="6dp"
+        />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/copyright"
+            android:gravity="center_horizontal"
+            style="@style/regularText"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/version_otp"
+            android:gravity="center_horizontal"
+            style="@style/regularText"
+
+            />
+
+
+    </LinearLayout>
+    </RelativeLayout>
