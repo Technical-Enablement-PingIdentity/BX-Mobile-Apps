@@ -1,0 +1,120 @@
+
+/* Class = "UILabel"; text = "ID Verification successful."; ObjectID = "14g-i1-f91"; */
+"14g-i1-f91.text" = "ID Verification successful.";
+
+/* Class = "UILabel"; text = "Information modified. Resubmit your data for verification. "; ObjectID = "1LK-z2-z70"; */
+"1LK-z2-z70.text" = "Information modified. Resubmit your data for verification. ";
+
+/* Class = "UILabel"; text = "To start ID verification, scan the qr code or enter the 12-digiverification key."; ObjectID = "62C-9v-Jtz"; */
+"62C-9v-Jtz.text" = "To start ID verification, scan the qr code or enter the 12-digiverification key.";
+
+/* Class = "UIButton"; normalTitle = "Enter Verification Key Manually"; ObjectID = "7R0-3E-ZP1"; */
+"7R0-3E-ZP1.normalTitle" = "Enter Verification Key Manually";
+
+/* Class = "UIButton"; normalTitle = "Add/Update Passport"; ObjectID = "7ZQ-IF-tde"; */
+"7ZQ-IF-tde.normalTitle" = "Add/Update Passport";
+
+/* Class = "UIButton"; normalTitle = "Check Verification Status"; ObjectID = "8ji-O0-XyI"; */
+"8ji-O0-XyI.normalTitle" = "Check Verification Status";
+
+/* Class = "UILabel"; text = "Driver License"; ObjectID = "9Ns-vb-Ov1"; */
+"9Ns-vb-Ov1.text" = "Driver License";
+
+/* Class = "UILabel"; text = "Issuing State"; ObjectID = "A2e-am-0p0"; */
+"A2e-am-0p0.text" = "Issuing State";
+
+/* Class = "UILabel"; text = "ID Verification failed. Click for details."; ObjectID = "Cei-1h-0qI"; */
+"Cei-1h-0qI.text" = "ID Verification failed. Click for details.";
+
+/* Class = "UIButton"; normalTitle = "Pair"; ObjectID = "DH9-88-T1l"; */
+"DH9-88-T1l.normalTitle" = "Pair";
+
+/* Class = "UITextView"; text = "Capture your passport for the verification process."; ObjectID = "FFv-Lc-Rer"; */
+"FFv-Lc-Rer.text" = "Capture your passport for the verification process.";
+
+/* Class = "UIButton"; normalTitle = "Delete this card"; ObjectID = "HrP-3z-wEE"; */
+"HrP-3z-wEE.normalTitle" = "Delete this card";
+
+/* Class = "UIButton"; normalTitle = "Add Device >>"; ObjectID = "Mgl-7s-1A3"; */
+"Mgl-7s-1A3.normalTitle" = "Add Device >>";
+
+/* Class = "UITextView"; text = "Scan your driver license for the verification process."; ObjectID = "OCT-Ws-YXm"; */
+"OCT-Ws-YXm.text" = "Scan your driver license for the verification process.";
+
+/* Class = "UILabel"; text = "ID shared. Waiting for verification result..."; ObjectID = "OUT-9Y-vjT"; */
+"OUT-9Y-vjT.text" = "ID shared. Waiting for verification result...";
+
+/* Class = "UIBarButtonItem"; title = "Skip"; ObjectID = "PzC-bq-T1K"; */
+"PzC-bq-T1K.title" = "Skip";
+
+/* Class = "UIButton"; normalTitle = "Capture Passport"; ObjectID = "SEZ-8k-FKN"; */
+"SEZ-8k-FKN.normalTitle" = "Capture Passport";
+
+/* Class = "UIButton"; normalTitle = "Verify your Identity >>"; ObjectID = "SX4-0o-bbr"; */
+"SX4-0o-bbr.normalTitle" = "Verify your Identity >>";
+
+/* Class = "UILabel"; text = "Verify your device"; ObjectID = "TCu-DD-iTR"; */
+"TCu-DD-iTR.text" = "Verify your device";
+
+/* Class = "UIButton"; normalTitle = "Add/Update Selfie"; ObjectID = "Vcc-fC-5A0"; */
+"Vcc-fC-5A0.normalTitle" = "Add/Update Selfie";
+
+/* Class = "UILabel"; text = "PingOne Verify"; ObjectID = "WFF-Ul-nL8"; */
+"WFF-Ul-nL8.text" = "PingOne Verify";
+
+/* Class = "UIButton"; normalTitle = "Capture Driver License"; ObjectID = "XbY-46-3CL"; */
+"XbY-46-3CL.normalTitle" = "Capture Driver License";
+
+/* Class = "UITextField"; placeholder = "Pairing Key"; ObjectID = "Xys-mo-HCZ"; */
+"Xys-mo-HCZ.placeholder" = "Pairing Key";
+
+/* Class = "UILabel"; text = "Verify Your Device"; ObjectID = "a8S-D2-OLw"; */
+"a8S-D2-OLw.text" = "Verify Your Device";
+
+/* Class = "UILabel"; text = "Submitting data for verification..."; ObjectID = "aPA-X3-uQs"; */
+"aPA-X3-uQs.text" = "Submitting data for verification...";
+
+/* Class = "UITextView"; text = "Your facial scan will be used for biometric authentication in the verification process. Make sure your full face is visible."; ObjectID = "bgs-HD-Dpo"; */
+"bgs-HD-Dpo.text" = "Your facial scan will be used for biometric authentication in the verification process. Make sure your full face is visible.";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "dtq-KS-bpW"; */
+"dtq-KS-bpW.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Get Started >"; ObjectID = "eGP-g5-NAa"; */
+"eGP-g5-NAa.normalTitle" = "Get Started >";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fhy-81-CTZ"; */
+"fhy-81-CTZ.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Verification Code"; ObjectID = "gHz-Cv-X4q"; */
+"gHz-Cv-X4q.placeholder" = "Verification Code";
+
+/* Class = "UILabel"; text = "Settings"; ObjectID = "hnE-9d-Y4N"; */
+"hnE-9d-Y4N.text" = "Settings";
+
+/* Class = "UILabel"; text = "Driver License"; ObjectID = "ilX-wr-jOs"; */
+"ilX-wr-jOs.text" = "Driver License";
+
+/* Class = "UIButton"; normalTitle = "Edit card information"; ObjectID = "iu1-3o-kjE"; */
+"iu1-3o-kjE.normalTitle" = "Edit card information";
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "kKT-2q-cZ8"; */
+"kKT-2q-cZ8.normalTitle" = "Verify";
+
+/* Class = "UILabel"; text = "Selfie"; ObjectID = "ln8-cu-Y33"; */
+"ln8-cu-Y33.text" = "Selfie";
+
+/* Class = "UIButton"; normalTitle = "Capture Selfie"; ObjectID = "tr5-Qp-1G7"; */
+"tr5-Qp-1G7.normalTitle" = "Capture Selfie";
+
+/* Class = "UILabel"; text = "This form of digital identification is used by some service providers who require ID Verifications."; ObjectID = "u3i-E4-QTg"; */
+"u3i-E4-QTg.text" = "This form of digital identification is used by some service providers who require ID Verifications.";
+
+/* Class = "UIButton"; normalTitle = "Add/Update Driver License"; ObjectID = "vEi-DP-ru3"; */
+"vEi-DP-ru3.normalTitle" = "Add/Update Driver License";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "wFO-aI-dQJ"; */
+"wFO-aI-dQJ.normalTitle" = "Get Started";
+
+/* Class = "UILabel"; text = "Passport"; ObjectID = "xyA-Gi-IZe"; */
+"xyA-Gi-IZe.text" = "Passport";
