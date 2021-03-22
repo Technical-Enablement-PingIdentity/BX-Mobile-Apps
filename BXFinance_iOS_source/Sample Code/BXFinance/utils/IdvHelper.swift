@@ -190,6 +190,11 @@ extension IdvHelper: NotificationHandler {
     
     public func handlerResult(_ verificationResult: VerificationResult) {
         print("Verification Result: \(verificationResult.getValidationStatus())")
+        if let userData = verificationResult.getUserData(), !userData.isEmpty() {
+            self.updateIdCard(from: userData)
+        } else {
+            print("Verification Result doesn't contain any UserData")
+        }
         if let verificationErrors = verificationResult.getValidationErrors() {
             verificationErrors.forEach { print("Error: \((try? $0.toJsonString()) ?? "Failed to parse to json") ") }
         }
@@ -201,5 +206,55 @@ extension IdvHelper: NotificationHandler {
         UIApplication.showErrorAlert(message: "check_status_error_message".localized, alertAction: nil)
     }
     
+    private func updateIdCard(from userData: UserData) {
+        print("Verified User Data: \(try? userData.toJsonString() ?? "No user data")")
+        
+        switch userData.getCardType() {
+        case IdCardKeys.cardTypeDriverLicense:
+            self.updateDriverLicense(from: userData)
+        case IdCardKeys.cardTypePassport:
+            self.updatePassport(from: userData)
+        default:
+            return
+        }
+    }
+    
+    private func updateDriverLicense(from userData: UserData) {
+        guard let card = StorageManager.shared.getCardForType(IdCardKeys.cardTypeDriverLicense),
+              let driverLicense = card as? DriverLicense else {
+            print("Cannot find card for type \(userData.getCardType())")
+            return
+        }
+        driverLicense.setFirstName(userData.getFirstName().isEmpty ? driverLicense.getFirstName() : userData.getFirstName())
+        driverLicense.setLastName(userData.getLastName().isEmpty ? driverLicense.getLastName() : userData.getLastName())
+        driverLicense.setBirthDate(userData.getDateOfBirth().isEmpty ? driverLicense.getBirthDate() : userData.getDateOfBirth())
+        driverLicense.setAddressStreet(userData.getAddressLine1().isEmpty ? driverLicense.getAddressStreet() : userData.getAddressLine1())
+        driverLicense.setAddressCity(userData.getCity().isEmpty ? driverLicense.getAddressCity() : userData.getCity())
+        driverLicense.setAddressState(userData.getState().isEmpty ? driverLicense.getAddressState() : userData.getState())
+        driverLicense.setAddressZip(userData.getPostalCode().isEmpty ? driverLicense.getAddressZip() : userData.getPostalCode())
+        driverLicense.setCountry(userData.getCountry().isEmpty ? driverLicense.getCountry() : userData.getCountry())
+        driverLicense.setIdNumber(userData.getDocumentId().isEmpty ? driverLicense.getIdNumber() : userData.getDocumentId())
+        driverLicense.setExpirationDate(userData.getExpirationDate().isEmpty ? driverLicense.getExpirationDate() : userData.getExpirationDate())
+        driverLicense.setIssueDate(userData.getIssueDate().isEmpty ? driverLicense.getIssueDate() : userData.getIssueDate())
+        
+        StorageManager.shared.updateCard(card: driverLicense)
+    }
+    
+    private func updatePassport(from userData: UserData) {
+        guard let card = StorageManager.shared.getCardForType(IdCardKeys.cardTypePassport),
+              let passport = card as? Passport else {
+            print("Cannot find card for type \(userData.getCardType())")
+            return
+        }
+        passport.setFirstName(userData.getFirstName().isEmpty ? passport.getFirstName() : userData.getFirstName())
+        passport.setLastName(userData.getLastName().isEmpty ? passport.getLastName() : userData.getLastName())
+        passport.setBirthDate(userData.getDateOfBirth().isEmpty ? passport.getBirthDate() : userData.getDateOfBirth())
+        passport.setCountry(userData.getCountry().isEmpty ? passport.getCountry() : userData.getCountry())
+        passport.setIdNumber(userData.getDocumentId().isEmpty ? passport.getIdNumber() : userData.getDocumentId())
+        passport.setExpirationDate(userData.getExpirationDate().isEmpty ? passport.getExpirationDate() : userData.getExpirationDate())
+        
+        StorageManager.shared.updateCard(card: passport)
+        
+    }
     
 }

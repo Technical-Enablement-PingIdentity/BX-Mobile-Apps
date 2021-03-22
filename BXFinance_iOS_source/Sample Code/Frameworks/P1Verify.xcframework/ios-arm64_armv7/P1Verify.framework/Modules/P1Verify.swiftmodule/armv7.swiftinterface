@@ -80,10 +80,31 @@ public protocol NotificationHandler {
   func handlerResult(_ verificationResult: P1Verify.VerificationResult)
   func handleError(_ error: P1Verify.IdvError)
 }
+@_hasMissingDesignatedInitializers public class UserData : P1VerifyIDSchema.JsonSerializable {
+  required public init(dict: [Swift.String : Any]) throws
+  public func isEmpty() -> Swift.Bool
+  public func getFirstName() -> Swift.String
+  public func getLastName() -> Swift.String
+  public func getDateOfBirth() -> Swift.String
+  public func getAddressLine1() -> Swift.String
+  public func getAddressLine2() -> Swift.String
+  public func getCity() -> Swift.String
+  public func getState() -> Swift.String
+  public func getCountry() -> Swift.String
+  public func getPostalCode() -> Swift.String
+  public func getDocumentId() -> Swift.String
+  public func getExpirationDate() -> Swift.String
+  public func getIssueDate() -> Swift.String
+  public func getIdType() -> Swift.String
+  public func getCardType() -> Swift.String
+  @objc deinit
+  override public init()
+}
 @_hasMissingDesignatedInitializers public class VerificationResult {
   public func getTransactionId() -> Swift.String
   public func getValidationStatus() -> P1Verify.VerifyStatus
   public func getValidationClaims() -> [P1Verify.Claim]?
+  public func getUserData() -> P1Verify.UserData?
   public func getValidationErrors() -> [P1Verify.ProviderError]?
   @objc deinit
 }

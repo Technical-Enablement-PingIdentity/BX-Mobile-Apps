@@ -329,6 +329,7 @@ extension VerifyHomeViewController: iCarouselDataSource, iCarouselDelegate {
         } else if let passport = selectedCard as? Passport {
             frontImage = passport.frontImage
             backImage = nil
+            cardParams = passport.getClaims().filter( { $0.key != IdCardKeys.frontImage && $0.key != IdCardKeys.backImage })
         } else {
             frontImage = nil
             backImage = nil
