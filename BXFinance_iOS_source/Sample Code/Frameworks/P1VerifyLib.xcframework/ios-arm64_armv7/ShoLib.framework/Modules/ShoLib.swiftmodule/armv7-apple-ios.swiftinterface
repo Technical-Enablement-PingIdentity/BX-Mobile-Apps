@@ -692,7 +692,8 @@ extension UIImageView {
 extension UILabel {
   public func changeTextWithSlidingAnimation(direction: ShoLib.AnimationDirection, text: Swift.String?, duration: Foundation.TimeInterval)
 }
-@objc @_hasMissingDesignatedInitializers public class AnimationListener : ObjectiveC.NSObject, QuartzCore.CAAnimationDelegate {
+@objc public class AnimationListener : ObjectiveC.NSObject, QuartzCore.CAAnimationDelegate {
+  public init(onStart: (() -> Swift.Void)?, onStop: ((Swift.Bool) -> Swift.Void)?)
   @objc public func animationDidStart(_ anim: QuartzCore.CAAnimation)
   @objc public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
   @objc deinit

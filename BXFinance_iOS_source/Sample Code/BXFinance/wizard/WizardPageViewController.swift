@@ -90,7 +90,7 @@ class WizardPageViewController: UIPageViewController, UIPageViewControllerDataSo
         let currentIndex = self.currentPageIndex
         let newIndex = currentIndex + 1
         guard newIndex >= 0, newIndex < self.wizardViewControllers.count else {
-            guard IdvHelper.hasRequiredInfo() else {
+            guard (self.wizardViewControllers.count == 1 || IdvHelper.hasRequiredInfo()) else {
                 DispatchQueue.main.async {
                     let alertVc = UIAlertController(title: "insufficient_info_error_title".localized, message: "insufficient_info_error_message".localized, preferredStyle: .alert)
                     alertVc.addAction(UIAlertAction(title: "Okay".localized, style: .default, handler: nil))
