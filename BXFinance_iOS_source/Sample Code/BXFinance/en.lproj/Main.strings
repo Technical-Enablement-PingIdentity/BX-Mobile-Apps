@@ -5,8 +5,8 @@
 /* Class = "UILabel"; text = "Information modified. Resubmit your data for verification. "; ObjectID = "1LK-z2-z70"; */
 "1LK-z2-z70.text" = "Information modified. Resubmit your data for verification. ";
 
-/* Class = "UILabel"; text = "To start ID verification, scan the qr code or enter the 12-digiverification key."; ObjectID = "62C-9v-Jtz"; */
-"62C-9v-Jtz.text" = "To start ID verification, scan the qr code or enter the 12-digiverification key.";
+/* Class = "UILabel"; text = "To start ID verification, scan the QR code or enter the 12-digiverification key."; ObjectID = "62C-9v-Jtz"; */
+"62C-9v-Jtz.text" = "To start ID verification, scan the QR code or enter the 12-digiverification key.";
 
 /* Class = "UIButton"; normalTitle = "Enter Verification Key Manually"; ObjectID = "7R0-3E-ZP1"; */
 "7R0-3E-ZP1.normalTitle" = "Enter Verification Key Manually";
