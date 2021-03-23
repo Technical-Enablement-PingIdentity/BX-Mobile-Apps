@@ -71,7 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // added from Verify
         print("didRegisterForRemoteNotificationsWithDeviceToken: \(deviceToken.hexDescription)")
-                self.pnToken = deviceToken
+        self.pnToken = deviceToken
         
         let deviceTokenString = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
         print("Device Token: \(deviceTokenString)")
@@ -87,40 +87,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             }
         }
     }
-
     
-    
-
     // added from Verify
-            public class func registerForAPNS() {
-                DispatchQueue.main.async {
-                    let center = UNUserNotificationCenter.current()
-                    center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                        if let error = error {
-                            print("Error: User denied permission for push notifications. \(error.localizedDescription)")
-                            
-                            let alert = UIAlertController(title: "Notifications Disabled".localized, message: "You must enable notifications for your application to be able to submit data for verification.", preferredStyle: .alert)
-                            alert.addAction(UIAlertAction(title: "Cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
-                            alert.addAction(UIAlertAction(title: "Go to Settings".localized, style: UIAlertAction.Style.default, handler: { (_) in
-                                if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
-                                    UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
-                                }
-                            }))
-                            alert.show()
-                        }
-                        DispatchQueue.main.async {
-                            UIApplication.shared.registerForRemoteNotifications()
-                        }
-                    }
+    public class func registerForAPNS() {
+        DispatchQueue.main.async {
+            let center = UNUserNotificationCenter.current()
+            center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+                if let error = error {
+                    print("Error: User denied permission for push notifications. \(error.localizedDescription)")
                     
+                    let alert = UIAlertController(title: "Notifications Disabled".localized, message: "You must enable notifications for your application to be able to submit data for verification.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
+                    alert.addAction(UIAlertAction(title: "Go to Settings".localized, style: UIAlertAction.Style.default, handler: { (_) in
+                        if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+                        }
+                    }))
+                    alert.show()
+                }
+                DispatchQueue.main.async {
+                    UIApplication.shared.registerForRemoteNotifications()
                 }
             }
+            
+        }
+    }
     
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
-                                withCompletionHandler completionHandler: @escaping () -> Void)
-    {
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
         print("didReceive")
         
         PingOne.processRemoteNotificationAction(response.actionIdentifier, authenticationMethod: "user", forRemoteNotification: response.notification.request.content.userInfo) { (notificationObject, error) in

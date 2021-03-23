@@ -106,7 +106,9 @@ public class IdvHelper {
             case .failure(let error):
                 print("Error submitting data: \(error.localizedDescription)")
                 UIApplication.showErrorAlert(message: "submit_data_error_message".localized, alertAction: nil)
-                StorageManager.shared.updateVerificationStatus(status: .NOT_STARTED)
+                if (error as? IdvError != IdvError.cannotInitializeIdvService("")) {
+                    StorageManager.shared.updateVerificationStatus(status: .NOT_STARTED)
+                }
             case .success(let status):
                 StorageManager.shared.updateVerificationStatus(status: status)
             }
@@ -114,12 +116,12 @@ public class IdvHelper {
     }
     
     private func submitVerificationData(ticketId: String?, qrUrl: String?, cards: [IdCard], onComplete: @escaping ((Result<VerifyStatus, Error>) -> Void)) {
-        StorageManager.shared.updateVerificationStatus(status: .REQUESTED)
         self.initIdvService(ticketId: ticketId, qrUrl: qrUrl) { (result) in
             switch result {
             case .failure(let error):
                 onComplete(Result.failure(error))
             case .success(_):
+                StorageManager.shared.updateVerificationStatus(status: .REQUESTED)
                 self.idvService!.submitDataForVerification(data: cards, onComplete: { (result) in
                     onComplete(result.mapError( { return $0 as Error } ))
                 })
