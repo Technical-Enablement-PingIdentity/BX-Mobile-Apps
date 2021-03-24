@@ -36,20 +36,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // added from Verify
         self.notificationUserInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any]
-
-
         return true
     }
     
-    func registerRemoteNotifications()
-    {
+    func registerRemoteNotifications() {
         print("Registering remote notifications")
         
         let center  = UNUserNotificationCenter.current()
         center.delegate = self
         center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
-            if error == nil
-            {
+            if error == nil {
                 // Registering UNNotificationCategories more than once results in previous categories being overwritten. PingOne provides the needed categories. The developer may add categories.
                 UNUserNotificationCenter.current().setNotificationCategories(PingOne.getUNNotificationCategories())
                 DispatchQueue.main.async {
@@ -59,13 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         }
     }
     
-    func application(_ application: UIApplication,
-                     didFailToRegisterForRemoteNotificationsWithError error: Error)
-    {
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print(error.localizedDescription)
     }
-    
-    
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
@@ -109,10 +101,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                     UIApplication.shared.registerForRemoteNotifications()
                 }
             }
-            
         }
     }
-    
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
@@ -121,21 +111,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         PingOne.processRemoteNotificationAction(response.actionIdentifier, authenticationMethod: "user", forRemoteNotification: response.notification.request.content.userInfo) { (notificationObject, error) in
             
-            if let error = error{
+            if let error = error {
                 print("Error: \(String(describing: error))")
-                if error.code == ErrorCode.unrecognizedRemoteNotification.rawValue{
+                if error.code == ErrorCode.unrecognizedRemoteNotification.rawValue {
                     //Do something else with remote notification.
                 }
-            }
-            else if let notificationObject = notificationObject{ //User pressed the actual banner, instead of an action.
+            } else if let notificationObject = notificationObject { //User pressed the actual banner, instead of an action.
                 self.displayNotificationViewAlert(notificationObject)
             }
-            completionHandler()
+            DispatchQueue.main.async {
+                completionHandler()
+            }
         }
     }
     
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void)
-    {
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         print("didReceiveRemoteNotification userinfo: \(userInfo)")
         
         PingOne.processRemoteNotification(userInfo) { (notificationObject, error) in
