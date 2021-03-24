@@ -94,21 +94,23 @@ class VerifyHomeViewController: UIViewController {
         self.updateVerificationStatus()
     }
     
+    var observers: [NSObjectProtocol?] = []
+    
     func initializeObservers() {
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.REMOTE_PUSH_RECEIVED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
+        observers.append(NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.REMOTE_PUSH_RECEIVED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
             IdvHelper.shared.processNotification(userInfo: notification.userInfo)
-        }
+        })
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.STORAGE_INITIALIZED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (_) in
+        observers.append(NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.STORAGE_INITIALIZED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (_) in
             DispatchQueue.main.async {
                 self.initApp()
                 if let userInfo = (UIApplication.shared.delegate as? AppDelegate)?.notificationUserInfo {
                     IdvHelper.shared.processNotification(userInfo: userInfo)
                 }
             }
-        }
+        })
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.IDV_STATUS_UPDATED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
+        observers.append(NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.IDV_STATUS_UPDATED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
             DispatchQueue.main.async {
                 self.updateVerificationStatus()
                 if (self.currentVerifyStatus == VerifyStatus.IN_PROGRESS) {
@@ -119,18 +121,26 @@ class VerifyHomeViewController: UIViewController {
                 
                 self.previousStatus = self.currentVerifyStatus
             }
-        }
+        })
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.CARD_ADDED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
+        observers.append(NotificationCenter.default.addObserver(forName: NSNotification.Name(StorageManager.CARD_ADDED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
             DispatchQueue.main.async {
                 self.refreshHomeScreen()
             }
-        }
+        })
         
-        NotificationCenter.default.addObserver(forName:  NSNotification.Name(StorageManager.CARD_DELETED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
+        observers.append(NotificationCenter.default.addObserver(forName:  NSNotification.Name(StorageManager.CARD_DELETED_NOTIFICATION_CENTER_KEY), object: nil, queue: nil) { (notification) in
             DispatchQueue.main.async {
                 self.refreshHomeScreen()
                 StorageManager.shared.updateVerificationStatus(status: .NOT_STARTED)
+            }
+        })
+    }
+    
+    func removeObservers() {
+        self.observers.forEach { (observer) in
+            if let ob = observer {
+                NotificationCenter.default.removeObserver(ob)
             }
         }
     }
@@ -213,6 +223,7 @@ class VerifyHomeViewController: UIViewController {
     }
     
     @IBAction func onHomeButtonClicked(_ sender: UIButton) {
+        self.removeObservers()
         self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
