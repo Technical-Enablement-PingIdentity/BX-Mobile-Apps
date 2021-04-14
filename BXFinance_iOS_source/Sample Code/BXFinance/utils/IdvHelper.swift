@@ -190,7 +190,7 @@ public class IdvHelper {
 
 extension IdvHelper: NotificationHandler {
     
-    public func handlerResult(_ verificationResult: VerificationResult) {
+    public func handleResult(_ verificationResult: VerificationResult) {
         print("Verification Result: \(verificationResult.getValidationStatus())")
         if let userData = verificationResult.getUserData(), !userData.isEmpty() {
             self.updateIdCard(from: userData)
@@ -209,7 +209,7 @@ extension IdvHelper: NotificationHandler {
     }
     
     private func updateIdCard(from userData: UserData) {
-        print("Verified User Data: \(try? userData.toJsonString() ?? "No user data")")
+        print("Verified User Data: \((try? userData.toJsonString()) ?? "No user data")")
         
         switch userData.getCardType() {
         case IdCardKeys.cardTypeDriverLicense:
@@ -229,13 +229,13 @@ extension IdvHelper: NotificationHandler {
         }
         driverLicense.setFirstName(userData.getFirstName().isEmpty ? driverLicense.getFirstName() : userData.getFirstName())
         driverLicense.setLastName(userData.getLastName().isEmpty ? driverLicense.getLastName() : userData.getLastName())
-        driverLicense.setBirthDate(userData.getDateOfBirth().isEmpty ? driverLicense.getBirthDate() : userData.getDateOfBirth())
-        driverLicense.setAddressStreet(userData.getAddressLine1().isEmpty ? driverLicense.getAddressStreet() : userData.getAddressLine1())
-        driverLicense.setAddressCity(userData.getCity().isEmpty ? driverLicense.getAddressCity() : userData.getCity())
-        driverLicense.setAddressState(userData.getState().isEmpty ? driverLicense.getAddressState() : userData.getState())
-        driverLicense.setAddressZip(userData.getPostalCode().isEmpty ? driverLicense.getAddressZip() : userData.getPostalCode())
+        driverLicense.setBirthDate(userData.getBirthDate().isEmpty ? driverLicense.getBirthDate() : userData.getBirthDate())
+        driverLicense.setAddressStreet(userData.getAddressStreet().isEmpty ? driverLicense.getAddressStreet() : userData.getAddressStreet())
+        driverLicense.setAddressCity(userData.getAddressCity().isEmpty ? driverLicense.getAddressCity() : userData.getAddressCity())
+        driverLicense.setAddressState(userData.getAddressState().isEmpty ? driverLicense.getAddressState() : userData.getAddressState())
+        driverLicense.setAddressZip(userData.getAddressZip().isEmpty ? driverLicense.getAddressZip() : userData.getAddressZip())
         driverLicense.setCountry(userData.getCountry().isEmpty ? driverLicense.getCountry() : userData.getCountry())
-        driverLicense.setIdNumber(userData.getDocumentId().isEmpty ? driverLicense.getIdNumber() : userData.getDocumentId())
+        driverLicense.setIdNumber(userData.getIdNumber().isEmpty ? driverLicense.getIdNumber() : userData.getIdNumber())
         driverLicense.setExpirationDate(userData.getExpirationDate().isEmpty ? driverLicense.getExpirationDate() : userData.getExpirationDate())
         driverLicense.setIssueDate(userData.getIssueDate().isEmpty ? driverLicense.getIssueDate() : userData.getIssueDate())
         
@@ -250,9 +250,9 @@ extension IdvHelper: NotificationHandler {
         }
         passport.setFirstName(userData.getFirstName().isEmpty ? passport.getFirstName() : userData.getFirstName())
         passport.setLastName(userData.getLastName().isEmpty ? passport.getLastName() : userData.getLastName())
-        passport.setBirthDate(userData.getDateOfBirth().isEmpty ? passport.getBirthDate() : userData.getDateOfBirth())
+        passport.setBirthDate(userData.getBirthDate().isEmpty ? passport.getBirthDate() : userData.getBirthDate())
         passport.setCountry(userData.getCountry().isEmpty ? passport.getCountry() : userData.getCountry())
-        passport.setIdNumber(userData.getDocumentId().isEmpty ? passport.getIdNumber() : userData.getDocumentId())
+        passport.setIdNumber(userData.getIdNumber().isEmpty ? passport.getIdNumber() : userData.getIdNumber())
         passport.setExpirationDate(userData.getExpirationDate().isEmpty ? passport.getExpirationDate() : userData.getExpirationDate())
         
         StorageManager.shared.updateCard(card: passport)
