@@ -63,7 +63,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>isVerifyEnabled</key>
-	<true/>
+	<false/>
 	<key>p1v_app_id</key>
 	<string> 028887be-5d57-4cb8-aeb9-874c4f202ae0</string>
 </dict>
