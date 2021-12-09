@@ -18,18 +18,17 @@ class OIDCViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
-        self.buttonsImageView.contentMode = .scaleAspectFit
         self.buttonsImageView.layer.cornerRadius = 20
+        self.buttonsImageView.contentMode = .scaleAspectFit
         self.buttonsImageView.image = createButtonsImage() ?? UIImage(named: "menu-holder")
         self.verifyButton.isHidden = !(Bundle.main.infoDictionary?["isVerifyEnabled"] as? Bool ?? true)
     }
     
     func createButtonsImage() -> UIImage? {
-        let width = UIScreen.main.bounds.width
-        let frame = CGRect(x: 0, y: 0, width: width, height: 1.3 * width)
+        let frame = CGRect(x: 0, y: 0, width: 422, height: 520)
         let buttonsView = HomeButtonsView(frame: frame)
         buttonsView.layer.cornerRadius = 10
-        UIGraphicsBeginImageContextWithOptions(buttonsView.bounds.size, true, 0.0)
+        UIGraphicsBeginImageContextWithOptions(buttonsView.bounds.size, false, 0.0)
         guard let context = UIGraphicsGetCurrentContext() else {
             return nil
         }

@@ -46,13 +46,13 @@ struct SegueName {
 
 struct Local {
     static let DeviceIsPaired                   = "Device is paired successfully."
-    static let Pair                             = "Would you like to pair this device with your BXFinance account?"
-    static let Authenticate                     = "Authorize this BXFinance Request?"
+    static let Pair                             = "Would you like to pair this device with your BXHealth account?"
+    static let Authenticate                     = "Authorize this BXHealth Request?"
     static let Approve                          = "Approve"
     static let Deny                             = "Deny"
     static let Cancel                           = "Cancel"
     static let Success                          = "Success!"
-    static let Error                            = "We encountered an error. Please contact BXFinance Customer Service"
+    static let Error                            = "We encountered an error. Please contact BXHealth Customer Service"
     static let Ok                               = "OK"
 }
 

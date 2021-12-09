@@ -38,7 +38,7 @@
 //Errors
 "failed_to_init_storage" = "Failed to initialize storage. App may behave abnormally. Please restart the app to try again.";
 "verification_failed_error_title" = "Verification Failed";
-"verification_failed_error_message" = "Cannot verify your ID information. Please contact BXFinance Customer Support for further details.";
+"verification_failed_error_message" = "Cannot verify your ID information. Please contact the Customer Support for further details.";
 "insufficient_info_error_title" = "Insufficient Information";
 "insufficient_info_error_message" = "You must add your selfie and at least one of the supported cards in order to proceed.";
 "missing_info_error_title" = "Missing Info";
