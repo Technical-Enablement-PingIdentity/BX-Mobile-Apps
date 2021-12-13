@@ -36,6 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // added from Verify
         self.notificationUserInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any]
+        UINavigationBar.appearance().barTintColor = UIColor(named: "lib_nav_bar_color") ?? UIColor(netHex: 0x456058)
         return true
     }
     
