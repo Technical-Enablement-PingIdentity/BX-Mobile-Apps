@@ -62,7 +62,7 @@
 		1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */; };
 		1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
 		1C92742F27611C86000BFD6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52481229AA69B00DD0E06 /* Localizable.strings */; };
-		1C92743027611C86000BFD6F /* LiveFaceVerification.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */; };
+		1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
 		1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */; };
 		1C92743427611C86000BFD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
 		1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -140,7 +140,7 @@
 		D5787EFD25E9A45400DFC2D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */; };
 		D5787EFE25E9A45400DFC2D5 /* TicketEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */; };
 		D5787F0225E9A48200DFC2D5 /* IdScanner.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0025E9A48200DFC2D5 /* IdScanner.strings */; };
-		D5787F0325E9A48200DFC2D5 /* LiveFaceVerification.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */; };
+		D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
 		D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
 		D5787F0825E9A4A600DFC2D5 /* IDWalletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */; };
 		D5787F0925E9A4A600DFC2D5 /* CardParamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */; };
@@ -263,7 +263,7 @@
 		D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketEntryViewController.swift; sourceTree = "<group>"; };
 		D5787F0025E9A48200DFC2D5 /* IdScanner.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = IdScanner.strings; sourceTree = "<group>"; };
-		D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LiveFaceVerification.strings; sourceTree = "<group>"; };
+		D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SelfieCapture.strings; sourceTree = "<group>"; };
 		D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitOverlayView.xib; sourceTree = "<group>"; };
 		D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDWalletCardView.xib; sourceTree = "<group>"; };
 		D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardParamTableViewCell.xib; sourceTree = "<group>"; };
@@ -473,7 +473,7 @@
 				D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */,
 				D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */,
 				D5787F0025E9A48200DFC2D5 /* IdScanner.strings */,
-				D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */,
+				D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */,
 				1C81FDF025F2E5C700122720 /* lib_colors.xcassets */,
 				1C927453276143CC000BFD6F /* HomeButtonsView.xib */,
 			);
@@ -585,7 +585,7 @@
 				1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */,
 				1C92742F27611C86000BFD6F /* Localizable.strings in Resources */,
 				1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */,
-				1C92743027611C86000BFD6F /* LiveFaceVerification.strings in Resources */,
+				1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */,
 				1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */,
 				1C927451276143CC000BFD6F /* HomeButtonsView.xib in Resources */,
 				1C92743427611C86000BFD6F /* Main.storyboard in Resources */,
@@ -604,7 +604,7 @@
 				D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */,
 				1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */,
 				7BA52482229AA69B00DD0E06 /* Localizable.strings in Resources */,
-				D5787F0325E9A48200DFC2D5 /* LiveFaceVerification.strings in Resources */,
+				D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */,
 				D5869157258BFFF500FAFD07 /* Rubik-Bold.ttf in Resources */,
 				1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */,
 				1C92744627612441000BFD6F /* Assets.xcassets in Resources */,
@@ -921,7 +921,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -951,7 +951,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

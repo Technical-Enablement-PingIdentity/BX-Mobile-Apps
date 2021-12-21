@@ -103,7 +103,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aEv-tK-04t"/>
-                        <color key="backgroundColor" red="0.27058823529411763" green="0.39215686274509803" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="lib_nav_bar_color"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="VT0-vf-3rc" firstAttribute="width" secondItem="LYT-s0-UhX" secondAttribute="width" multiplier="0.95" id="1Rd-Hl-8zO"/>
@@ -1302,7 +1302,7 @@
             <objects>
                 <viewController storyboardIdentifier="TicketEntryViewController" id="lYM-vT-ooW" customClass="TicketEntryViewController" customModule="BXFinance" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6EG-lF-bN3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lib_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hkz-5k-lwa">
@@ -1453,7 +1453,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="dark_text_color">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.078431372549019607" green="0.20392156862745098" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lib_nav_bar_color">
             <color red="0.27099999785423279" green="0.37999999523162842" blue="0.34900000691413879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1462,7 +1462,7 @@
             <color red="0.078431372549019607" green="0.20392156862745098" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="version_text_color">
-            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.078431372549019607" green="0.20392156862745098" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
