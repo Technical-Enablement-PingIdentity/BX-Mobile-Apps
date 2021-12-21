@@ -10,6 +10,80 @@
 		10C32F2523BA595F00FA5E71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* Constants.swift */; };
 		1C34133525F346CA006947AA /* VerifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34133425F346CA006947AA /* VerifyHomeViewController.swift */; };
 		1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C81FDF025F2E5C700122720 /* lib_colors.xcassets */; };
+		1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */; };
+		1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */; };
+		1C9273FB27611C86000BFD6F /* IdvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED325E9A37B00DFC2D5 /* IdvHelper.swift */; };
+		1C9273FC27611C86000BFD6F /* WaitOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */; };
+		1C9273FD27611C86000BFD6F /* CardParamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */; };
+		1C9273FE27611C86000BFD6F /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF725E9A45400DFC2D5 /* QRScannerViewController.swift */; };
+		1C9273FF27611C86000BFD6F /* VerifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34133425F346CA006947AA /* VerifyHomeViewController.swift */; };
+		1C92740027611C86000BFD6F /* ManualPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA52471229AA65200DD0E06 /* ManualPairingViewController.swift */; };
+		1C92740127611C86000BFD6F /* UIColor+netHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */; };
+		1C92740227611C86000BFD6F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */; };
+		1C92740327611C86000BFD6F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDB25E9A3B400DFC2D5 /* StorageManager.swift */; };
+		1C92740427611C86000BFD6F /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED925E9A3B400DFC2D5 /* PersistentStorage.swift */; };
+		1C92740527611C86000BFD6F /* OIDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C29235F00600022D645 /* OIDCViewController.swift */; };
+		1C92740627611C86000BFD6F /* UIView+SlideAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE425E9A3D800DFC2D5 /* UIView+SlideAnimations.swift */; };
+		1C92740727611C86000BFD6F /* PollingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED225E9A37B00DFC2D5 /* PollingHelper.swift */; };
+		1C92740827611C86000BFD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA5246F229AA65200DD0E06 /* AppDelegate.swift */; };
+		1C92740927611C86000BFD6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C23235F004C0022D645 /* HomeViewController.swift */; };
+		1C92740A27611C86000BFD6F /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED825E9A3B400DFC2D5 /* StorageProtocol.swift */; };
+		1C92740B27611C86000BFD6F /* WizardStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC725E9A33400DFC2D5 /* WizardStepViewController.swift */; };
+		1C92740D27611C86000BFD6F /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C26235F00570022D645 /* ActionItem.swift */; };
+		1C92740E27611C86000BFD6F /* TicketEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */; };
+		1C92740F27611C86000BFD6F /* UIApplication+WaitOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE325E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift */; };
+		1C92741027611C86000BFD6F /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE625E9A3D800DFC2D5 /* String+localized.swift */; };
+		1C92741127611C86000BFD6F /* IDWalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */; };
+		1C92741227611C86000BFD6F /* WizardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC825E9A33400DFC2D5 /* WizardStep.swift */; };
+		1C92741327611C86000BFD6F /* WizardSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC225E9A33400DFC2D5 /* WizardSelfieViewController.swift */; };
+		1C92741427611C86000BFD6F /* UIApplication+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE225E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift */; };
+		1C92741527611C86000BFD6F /* WizardDriverLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC525E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift */; };
+		1C92741627611C86000BFD6F /* TempStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDA25E9A3B400DFC2D5 /* TempStorage.swift */; };
+		1C92741727611C86000BFD6F /* UIImage+FixPortraitOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE525E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift */; };
+		1C92741827611C86000BFD6F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */; };
+		1C92741927611C86000BFD6F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
+		1C92741A27611C86000BFD6F /* WizardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC625E9A33400DFC2D5 /* WizardPageViewController.swift */; };
+		1C92741B27611C86000BFD6F /* IdCardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED125E9A37B00DFC2D5 /* IdCardKeys.swift */; };
+		1C92741C27611C86000BFD6F /* WizardPassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC425E9A33400DFC2D5 /* WizardPassportViewController.swift */; };
+		1C92741E27611C86000BFD6F /* iCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9273F627611C86000BFD6F /* iCarousel */; };
+		1C92741F27611C86000BFD6F /* P1Verify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; };
+		1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
+		1C92742127611C86000BFD6F /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
+		1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; };
+		1C92742327611C86000BFD6F /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; };
+		1C92742427611C86000BFD6F /* CommunicationManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; };
+		1C92742527611C86000BFD6F /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; };
+		1C92742627611C86000BFD6F /* JOSETools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; };
+		1C92742727611C86000BFD6F /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; };
+		1C92742927611C86000BFD6F /* IDWalletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */; };
+		1C92742A27611C86000BFD6F /* IdScanner.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0025E9A48200DFC2D5 /* IdScanner.strings */; };
+		1C92742B27611C86000BFD6F /* CardParamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */; };
+		1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */; };
+		1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */; };
+		1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
+		1C92742F27611C86000BFD6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52481229AA69B00DD0E06 /* Localizable.strings */; };
+		1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
+		1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */; };
+		1C92743427611C86000BFD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
+		1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1C92743727611C86000BFD6F /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743827611C86000BFD6F /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1C92743A27611C86000BFD6F /* JOSETools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743B27611C86000BFD6F /* P1Verify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743C27611C86000BFD6F /* P1VerifyIDSchema.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743D27611C86000BFD6F /* CommunicationManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92743E27611C86000BFD6F /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C92744427611EDC000BFD6F /* BXHealth.xcassets */; };
+		1C92744627612441000BFD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52476229AA65300DD0E06 /* Assets.xcassets */; };
+		1C92744927612843000BFD6F /* lib_colors_bxhealth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9274472761282A000BFD6F /* lib_colors_bxhealth.xcassets */; };
+		1C92744D27613F22000BFD6F /* HomeButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92744C27613F22000BFD6F /* HomeButtonsView.swift */; };
+		1C92744F27614008000BFD6F /* HomeButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92744C27613F22000BFD6F /* HomeButtonsView.swift */; };
+		1C927450276143CC000BFD6F /* HomeButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C927453276143CC000BFD6F /* HomeButtonsView.xib */; };
+		1C927451276143CC000BFD6F /* HomeButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C927453276143CC000BFD6F /* HomeButtonsView.xib */; };
+		1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92745427614489000BFD6F /* HomeButtonLabels.strings */; };
+		1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C927456276144AD000BFD6F /* HomeButtonLabels.strings */; };
+		1C92745B27615DE1000BFD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* Constants.swift */; };
 		1CA13707262791B6005F0CDE /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; };
 		1CA13708262791B6005F0CDE /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA13709262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
@@ -30,7 +104,6 @@
 		7BA52470229AA65200DD0E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA5246F229AA65200DD0E06 /* AppDelegate.swift */; };
 		7BA52472229AA65200DD0E06 /* ManualPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA52471229AA65200DD0E06 /* ManualPairingViewController.swift */; };
 		7BA52475229AA65200DD0E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
-		7BA52477229AA65300DD0E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52476229AA65300DD0E06 /* Assets.xcassets */; };
 		7BA5247A229AA65300DD0E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */; };
 		7BA52482229AA69B00DD0E06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52481229AA69B00DD0E06 /* Localizable.strings */; };
 		7BA92C24235F004D0022D645 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C23235F004C0022D645 /* HomeViewController.swift */; };
@@ -67,7 +140,7 @@
 		D5787EFD25E9A45400DFC2D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */; };
 		D5787EFE25E9A45400DFC2D5 /* TicketEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */; };
 		D5787F0225E9A48200DFC2D5 /* IdScanner.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0025E9A48200DFC2D5 /* IdScanner.strings */; };
-		D5787F0325E9A48200DFC2D5 /* LiveFaceVerification.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */; };
+		D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
 		D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
 		D5787F0825E9A4A600DFC2D5 /* IDWalletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */; };
 		D5787F0925E9A4A600DFC2D5 /* CardParamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */; };
@@ -77,6 +150,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		1C92743527611C86000BFD6F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */,
+				1C92743727611C86000BFD6F /* P1VerifyLib.xcframework in Embed Frameworks */,
+				1C92743827611C86000BFD6F /* JOSESwift.xcframework in Embed Frameworks */,
+				1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */,
+				1C92743A27611C86000BFD6F /* JOSETools.xcframework in Embed Frameworks */,
+				1C92743B27611C86000BFD6F /* P1Verify.xcframework in Embed Frameworks */,
+				1C92743C27611C86000BFD6F /* P1VerifyIDSchema.xcframework in Embed Frameworks */,
+				1C92743D27611C86000BFD6F /* CommunicationManager.xcframework in Embed Frameworks */,
+				1C92743E27611C86000BFD6F /* CryptoTools.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BA52486229AA7E000DD0E06 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,6 +200,15 @@
 		1C34137A25F35A1C006947AA /* P1Verify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1Verify.xcframework; sourceTree = "<group>"; };
 		1C34137B25F35A1C006947AA /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
+		1C92744227611C86000BFD6F /* BXHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C92744327611C86000BFD6F /* BXHealth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = BXHealth.plist; path = "/Users/bhavyachauhan/Documents/TechEnablement/BXFinance-Mobile/BXFinance_iOS_source/Sample Code/BXHealth.plist"; sourceTree = "<absolute>"; };
+		1C92744427611EDC000BFD6F /* BXHealth.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = BXHealth.xcassets; sourceTree = "<group>"; };
+		1C9274472761282A000BFD6F /* lib_colors_bxhealth.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors_bxhealth.xcassets; sourceTree = "<group>"; };
+		1C92744C27613F22000BFD6F /* HomeButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonsView.swift; sourceTree = "<group>"; };
+		1C927452276143CC000BFD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeButtonsView.xib; sourceTree = "<group>"; };
+		1C92745427614489000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
+		1C927456276144AD000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
+		1C92745A27615DE1000BFD6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyLib.xcframework; path = ../../SDK/P1VerifyLib.xcframework; sourceTree = "<group>"; };
 		1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyIDSchema.xcframework; path = ../../SDK/P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
 		1CA13702262791B6005F0CDE /* CryptoTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoTools.xcframework; path = ../../SDK/CryptoTools.xcframework; sourceTree = "<group>"; };
@@ -162,7 +263,7 @@
 		D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketEntryViewController.swift; sourceTree = "<group>"; };
 		D5787F0025E9A48200DFC2D5 /* IdScanner.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = IdScanner.strings; sourceTree = "<group>"; };
-		D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = LiveFaceVerification.strings; sourceTree = "<group>"; };
+		D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SelfieCapture.strings; sourceTree = "<group>"; };
 		D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitOverlayView.xib; sourceTree = "<group>"; };
 		D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDWalletCardView.xib; sourceTree = "<group>"; };
 		D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardParamTableViewCell.xib; sourceTree = "<group>"; };
@@ -171,6 +272,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C92741D27611C86000BFD6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C92741E27611C86000BFD6F /* iCarousel in Frameworks */,
+				1C92741F27611C86000BFD6F /* P1Verify.xcframework in Frameworks */,
+				1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */,
+				1C92742127611C86000BFD6F /* P1VerifyIDSchema.xcframework in Frameworks */,
+				1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */,
+				1C92742327611C86000BFD6F /* CryptoTools.xcframework in Frameworks */,
+				1C92742427611C86000BFD6F /* CommunicationManager.xcframework in Frameworks */,
+				1C92742527611C86000BFD6F /* JOSESwift.xcframework in Frameworks */,
+				1C92742627611C86000BFD6F /* JOSETools.xcframework in Frameworks */,
+				1C92742727611C86000BFD6F /* P1VerifyLib.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BA52469229AA65200DD0E06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -191,12 +309,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C92745927615C28000BFD6F /* BXHealth */ = {
+			isa = PBXGroup;
+			children = (
+				1C927456276144AD000BFD6F /* HomeButtonLabels.strings */,
+				1C9274472761282A000BFD6F /* lib_colors_bxhealth.xcassets */,
+				1C92744427611EDC000BFD6F /* BXHealth.xcassets */,
+				1C92745A27615DE1000BFD6F /* Constants.swift */,
+			);
+			path = BXHealth;
+			sourceTree = "<group>";
+		};
 		7BA52463229AA65200DD0E06 = {
 			isa = PBXGroup;
 			children = (
 				D5787EB225E99F6400DFC2D5 /* Frameworks */,
 				7BA5246E229AA65200DD0E06 /* BXFinance */,
 				7BA5246D229AA65200DD0E06 /* Products */,
+				1C92744327611C86000BFD6F /* BXHealth.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				7BA5246C229AA65200DD0E06 /* BXFinance.app */,
+				1C92744227611C86000BFD6F /* BXHealth.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +342,7 @@
 		7BA5246E229AA65200DD0E06 /* BXFinance */ = {
 			isa = PBXGroup;
 			children = (
+				1C92745927615C28000BFD6F /* BXHealth */,
 				D5787EFF25E9A47100DFC2D5 /* resources */,
 				D5787EF625E9A44600DFC2D5 /* viewcontrollers */,
 				D5787EEF25E9A3E600DFC2D5 /* views */,
@@ -228,6 +360,7 @@
 				7BA92C29235F00600022D645 /* OIDCViewController.swift */,
 				7BA92C26235F00570022D645 /* ActionItem.swift */,
 				7BA52473229AA65200DD0E06 /* Main.storyboard */,
+				1C92745427614489000BFD6F /* HomeButtonLabels.strings */,
 				7BA52476229AA65300DD0E06 /* Assets.xcassets */,
 				D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */,
 				D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */,
@@ -313,6 +446,7 @@
 		D5787EEF25E9A3E600DFC2D5 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				1C92744C27613F22000BFD6F /* HomeButtonsView.swift */,
 				D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */,
 				D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */,
 				D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */,
@@ -339,8 +473,9 @@
 				D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */,
 				D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */,
 				D5787F0025E9A48200DFC2D5 /* IdScanner.strings */,
-				D5787F0125E9A48200DFC2D5 /* LiveFaceVerification.strings */,
+				D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */,
 				1C81FDF025F2E5C700122720 /* lib_colors.xcassets */,
+				1C927453276143CC000BFD6F /* HomeButtonsView.xib */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -348,6 +483,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C9273F527611C86000BFD6F /* BXHealth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C92743F27611C86000BFD6F /* Build configuration list for PBXNativeTarget "BXHealth" */;
+			buildPhases = (
+				1C9273F827611C86000BFD6F /* Sources */,
+				1C92741D27611C86000BFD6F /* Frameworks */,
+				1C92742827611C86000BFD6F /* Resources */,
+				1C92743527611C86000BFD6F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BXHealth;
+			packageProductDependencies = (
+				1C9273F627611C86000BFD6F /* iCarousel */,
+			);
+			productName = SampleApp;
+			productReference = 1C92744227611C86000BFD6F /* BXHealth.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7BA5246B229AA65200DD0E06 /* BXFinance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BA5247E229AA65300DD0E06 /* Build configuration list for PBXNativeTarget "BXFinance" */;
@@ -409,11 +565,33 @@
 			projectRoot = "";
 			targets = (
 				7BA5246B229AA65200DD0E06 /* BXFinance */,
+				1C9273F527611C86000BFD6F /* BXHealth */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C92742827611C86000BFD6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C92742927611C86000BFD6F /* IDWalletCardView.xib in Resources */,
+				1C92744927612843000BFD6F /* lib_colors_bxhealth.xcassets in Resources */,
+				1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */,
+				1C92742A27611C86000BFD6F /* IdScanner.strings in Resources */,
+				1C92742B27611C86000BFD6F /* CardParamTableViewCell.xib in Resources */,
+				1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */,
+				1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */,
+				1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */,
+				1C92742F27611C86000BFD6F /* Localizable.strings in Resources */,
+				1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */,
+				1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */,
+				1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */,
+				1C927451276143CC000BFD6F /* HomeButtonsView.xib in Resources */,
+				1C92743427611C86000BFD6F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BA5246A229AA65200DD0E06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,11 +602,13 @@
 				D5869155258BFFB700FAFD07 /* Rubik-Regular.ttf in Resources */,
 				7BA5247A229AA65300DD0E06 /* LaunchScreen.storyboard in Resources */,
 				D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */,
+				1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */,
 				7BA52482229AA69B00DD0E06 /* Localizable.strings in Resources */,
-				D5787F0325E9A48200DFC2D5 /* LiveFaceVerification.strings in Resources */,
+				D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */,
 				D5869157258BFFF500FAFD07 /* Rubik-Bold.ttf in Resources */,
-				7BA52477229AA65300DD0E06 /* Assets.xcassets in Resources */,
 				1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */,
+				1C92744627612441000BFD6F /* Assets.xcassets in Resources */,
+				1C927450276143CC000BFD6F /* HomeButtonsView.xib in Resources */,
 				7BA52475229AA65200DD0E06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +616,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C9273F827611C86000BFD6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */,
+				1C92745B27615DE1000BFD6F /* Constants.swift in Sources */,
+				1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */,
+				1C9273FB27611C86000BFD6F /* IdvHelper.swift in Sources */,
+				1C9273FC27611C86000BFD6F /* WaitOverlayView.swift in Sources */,
+				1C9273FD27611C86000BFD6F /* CardParamTableViewCell.swift in Sources */,
+				1C9273FE27611C86000BFD6F /* QRScannerViewController.swift in Sources */,
+				1C9273FF27611C86000BFD6F /* VerifyHomeViewController.swift in Sources */,
+				1C92740027611C86000BFD6F /* ManualPairingViewController.swift in Sources */,
+				1C92740127611C86000BFD6F /* UIColor+netHex.swift in Sources */,
+				1C92740227611C86000BFD6F /* UIView+Border.swift in Sources */,
+				1C92740327611C86000BFD6F /* StorageManager.swift in Sources */,
+				1C92740427611C86000BFD6F /* PersistentStorage.swift in Sources */,
+				1C92740527611C86000BFD6F /* OIDCViewController.swift in Sources */,
+				1C92740627611C86000BFD6F /* UIView+SlideAnimations.swift in Sources */,
+				1C92740727611C86000BFD6F /* PollingHelper.swift in Sources */,
+				1C92740827611C86000BFD6F /* AppDelegate.swift in Sources */,
+				1C92740927611C86000BFD6F /* HomeViewController.swift in Sources */,
+				1C92740A27611C86000BFD6F /* StorageProtocol.swift in Sources */,
+				1C92740B27611C86000BFD6F /* WizardStepViewController.swift in Sources */,
+				1C92740D27611C86000BFD6F /* ActionItem.swift in Sources */,
+				1C92740E27611C86000BFD6F /* TicketEntryViewController.swift in Sources */,
+				1C92740F27611C86000BFD6F /* UIApplication+WaitOverlay.swift in Sources */,
+				1C92741027611C86000BFD6F /* String+localized.swift in Sources */,
+				1C92741127611C86000BFD6F /* IDWalletCardView.swift in Sources */,
+				1C92741227611C86000BFD6F /* WizardStep.swift in Sources */,
+				1C92741327611C86000BFD6F /* WizardSelfieViewController.swift in Sources */,
+				1C92741427611C86000BFD6F /* UIApplication+ErrorAlert.swift in Sources */,
+				1C92741527611C86000BFD6F /* WizardDriverLicenseViewController.swift in Sources */,
+				1C92741627611C86000BFD6F /* TempStorage.swift in Sources */,
+				1C92744F27614008000BFD6F /* HomeButtonsView.swift in Sources */,
+				1C92741727611C86000BFD6F /* UIImage+FixPortraitOrientation.swift in Sources */,
+				1C92741827611C86000BFD6F /* SettingsViewController.swift in Sources */,
+				1C92741927611C86000BFD6F /* Alert.swift in Sources */,
+				1C92741A27611C86000BFD6F /* WizardPageViewController.swift in Sources */,
+				1C92741B27611C86000BFD6F /* IdCardKeys.swift in Sources */,
+				1C92741C27611C86000BFD6F /* WizardPassportViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BA52468229AA65200DD0E06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,6 +694,7 @@
 				D5787EE925E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift in Sources */,
 				D5787ECC25E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift in Sources */,
 				D5787EDE25E9A3B400DFC2D5 /* TempStorage.swift in Sources */,
+				1C92744D27613F22000BFD6F /* HomeButtonsView.swift in Sources */,
 				D5787EEC25E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift in Sources */,
 				D5787EFD25E9A45400DFC2D5 /* SettingsViewController.swift in Sources */,
 				7B32BA9B23687A46008C1CF5 /* Alert.swift in Sources */,
@@ -482,6 +707,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1C927453276143CC000BFD6F /* HomeButtonsView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C927452276143CC000BFD6F /* Base */,
+			);
+			name = HomeButtonsView.xib;
+			sourceTree = "<group>";
+		};
 		7BA52473229AA65200DD0E06 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +735,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1C92744027611C86000BFD6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YZYUGL7S48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp",
+				);
+				INFOPLIST_FILE = BXHealth.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1C92744127611C86000BFD6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = YZYUGL7S48;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleApp",
+				);
+				INFOPLIST_FILE = BXHealth.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		7BA5247C229AA65300DD0E06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -629,7 +921,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -637,7 +929,7 @@
 					"$(PROJECT_DIR)/SampleApp",
 				);
 				INFOPLIST_FILE = BXFinance/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -659,14 +951,14 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SampleApp",
 				);
 				INFOPLIST_FILE = BXFinance/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -684,6 +976,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C92743F27611C86000BFD6F /* Build configuration list for PBXNativeTarget "BXHealth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C92744027611C86000BFD6F /* Debug */,
+				1C92744127611C86000BFD6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BA52467229AA65200DD0E06 /* Build configuration list for PBXProject "BXFinance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -705,6 +1006,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1C9273F727611C86000BFD6F /* XCRemoteSwiftPackageReference "iCarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ShoCardInc/iCarousel";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		D5787F0C25EFEB6900DFC2D5 /* XCRemoteSwiftPackageReference "iCarousel" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ShoCardInc/iCarousel";
@@ -716,6 +1025,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1C9273F627611C86000BFD6F /* iCarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C9273F727611C86000BFD6F /* XCRemoteSwiftPackageReference "iCarousel" */;
+			productName = iCarousel;
+		};
 		D5787F0D25EFEB6900DFC2D5 /* iCarousel */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D5787F0C25EFEB6900DFC2D5 /* XCRemoteSwiftPackageReference "iCarousel" */;

@@ -12,9 +12,30 @@ import PingOne
 
 class OIDCViewController: UIViewController {
 
+    @IBOutlet weak var buttonsImageView: UIImageView!
+    @IBOutlet weak var verifyButton: UIButton!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.buttonsImageView.layer.cornerRadius = 20
+        self.buttonsImageView.contentMode = .scaleAspectFit
+        self.buttonsImageView.image = createButtonsImage() ?? UIImage(named: "menu-holder")
+        self.verifyButton.isHidden = !(Bundle.main.infoDictionary?["isVerifyEnabled"] as? Bool ?? true)
+    }
+    
+    func createButtonsImage() -> UIImage? {
+        let frame = CGRect(x: 0, y: 0, width: 422, height: 520)
+        let buttonsView = HomeButtonsView(frame: frame)
+        buttonsView.layer.cornerRadius = 10
+        UIGraphicsBeginImageContextWithOptions(buttonsView.bounds.size, false, 0.0)
+        guard let context = UIGraphicsGetCurrentContext() else {
+            return nil
+        }
+        buttonsView.layer.render(in: context)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

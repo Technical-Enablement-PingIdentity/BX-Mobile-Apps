@@ -1,0 +1,14 @@
+/* 
+  HomeButtonLabelsBxHealth.strings
+  BXFinance
+
+  Created by Bhavya Chauhan on 12/8/21.
+  Copyright © 2021 Ping Identity. All rights reserved.
+*/
+
+"button1" = "Coverage & Benefits";
+"button2" = "Claims & Accounts";
+"button3" = "Prescriptions & Pharmacies";
+"button4" = "Health Resources";
+"button5" = "Profile & Settings";
+"button6" = "Messages";
