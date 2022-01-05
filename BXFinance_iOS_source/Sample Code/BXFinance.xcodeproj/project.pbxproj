@@ -84,8 +84,6 @@
 		1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92745427614489000BFD6F /* HomeButtonLabels.strings */; };
 		1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C927456276144AD000BFD6F /* HomeButtonLabels.strings */; };
 		1C92745B27615DE1000BFD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* Constants.swift */; };
-		1CA13707262791B6005F0CDE /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; };
-		1CA13708262791B6005F0CDE /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA13709262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
 		1CA1370A262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA1370B262791B6005F0CDE /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; };
@@ -98,6 +96,8 @@
 		1CA13712262791B6005F0CDE /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA13713262791B6005F0CDE /* JOSETools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; };
 		1CA13714262791B6005F0CDE /* JOSETools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CCD39232785008600C60205 /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCD39222785008600C60205 /* P1VerifyLib.xcframework */; };
+		1CCD39242785008600C60205 /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCD39222785008600C60205 /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B32BA9B23687A46008C1CF5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
 		7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
 		7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -176,13 +176,13 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */,
-				1CA13708262791B6005F0CDE /* P1VerifyLib.xcframework in Embed Frameworks */,
 				1CA13712262791B6005F0CDE /* JOSESwift.xcframework in Embed Frameworks */,
 				7BA92C2D235F00AD0022D645 /* AppAuth.xcframework in Embed Frameworks */,
 				1CA13714262791B6005F0CDE /* JOSETools.xcframework in Embed Frameworks */,
 				1CA13710262791B6005F0CDE /* P1Verify.xcframework in Embed Frameworks */,
 				1CA1370A262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Embed Frameworks */,
 				1CA1370E262791B6005F0CDE /* CommunicationManager.xcframework in Embed Frameworks */,
+				1CCD39242785008600C60205 /* P1VerifyLib.xcframework in Embed Frameworks */,
 				1CA1370C262791B6005F0CDE /* CryptoTools.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -216,6 +216,7 @@
 		1CA13704262791B6005F0CDE /* P1Verify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1Verify.xcframework; path = ../../SDK/P1Verify.xcframework; sourceTree = "<group>"; };
 		1CA13705262791B6005F0CDE /* JOSESwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JOSESwift.xcframework; path = ../../SDK/JOSESwift.xcframework; sourceTree = "<group>"; };
 		1CA13706262791B6005F0CDE /* JOSETools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JOSETools.xcframework; path = ../../SDK/JOSETools.xcframework; sourceTree = "<group>"; };
+		1CCD39222785008600C60205 /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyLib.xcframework; path = ../../SDK/P1VerifyLib.xcframework; sourceTree = "<group>"; };
 		7B32BA9A23687A46008C1CF5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7B81E4FA2338B7610040DC79 /* PingOne.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOne.xcframework; sourceTree = "<group>"; };
 		7B9C1FED23585AEF0069315F /* Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Debug-Info.plist"; sourceTree = "<group>"; };
@@ -302,7 +303,7 @@
 				1CA1370D262791B6005F0CDE /* CommunicationManager.xcframework in Frameworks */,
 				1CA13711262791B6005F0CDE /* JOSESwift.xcframework in Frameworks */,
 				1CA13713262791B6005F0CDE /* JOSETools.xcframework in Frameworks */,
-				1CA13707262791B6005F0CDE /* P1VerifyLib.xcframework in Frameworks */,
+				1CCD39232785008600C60205 /* P1VerifyLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +377,7 @@
 		D5787EB225E99F6400DFC2D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CCD39222785008600C60205 /* P1VerifyLib.xcframework */,
 				1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */,
 				1CA13702262791B6005F0CDE /* CryptoTools.xcframework */,
 				1CA13705262791B6005F0CDE /* JOSESwift.xcframework */,
@@ -532,7 +534,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Ping Identity";
 				TargetAttributes = {
 					7BA5246B229AA65200DD0E06 = {
@@ -742,7 +744,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -772,7 +774,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -820,6 +822,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -883,6 +886,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -921,7 +925,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -934,7 +938,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -951,7 +955,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -963,7 +967,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
