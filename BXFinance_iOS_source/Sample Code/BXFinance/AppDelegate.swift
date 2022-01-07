@@ -36,6 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // added from Verify
         self.notificationUserInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any]
+        
+        if #available(iOS 15.0, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.backgroundColor = UIColor(named: "lib_nav_bar_color") ?? UIColor(netHex: 0x456058)
+            navigationBarAppearance.shadowColor = nil
+            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+        } else {
+            UINavigationBar.appearance().barTintColor = UIColor(named: "lib_nav_bar_color") ?? UIColor(netHex: 0x456058)
+        }
+
         return true
     }
     

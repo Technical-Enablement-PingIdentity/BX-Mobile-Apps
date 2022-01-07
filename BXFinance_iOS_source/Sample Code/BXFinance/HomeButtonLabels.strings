@@ -1,0 +1,14 @@
+/* 
+  HomeButtonLabels.strings
+  BXFinance
+
+  Created by Bhavya Chauhan on 12/8/21.
+  Copyright © 2021 Ping Identity. All rights reserved.
+*/
+
+"button1" = "Pay & Transfer";
+"button2" = "Banking & Credit Accounts";
+"button3" = "Loans & Lines of Credit";
+"button4" = "Investment Accounts";
+"button5" = "Profile & Settings";
+"button6" = "Messages";

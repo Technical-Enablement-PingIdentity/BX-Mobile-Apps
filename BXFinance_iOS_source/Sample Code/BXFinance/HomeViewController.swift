@@ -17,7 +17,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         //let pairAction = ActionItem.init(actionName: PairingMethodName.Manual, segueID: SegueName.Manual, actionType: .segue)
         let oidcAction = ActionItem.init(actionName: PairingMethodName.OIDC, segueID: SegueName.OIDC, actionType: .segue)
         //let logsAction = ActionItem.init(actionName: SDKFunctionality.SendLogs, segueID: nil, actionType: .sendLogs)
