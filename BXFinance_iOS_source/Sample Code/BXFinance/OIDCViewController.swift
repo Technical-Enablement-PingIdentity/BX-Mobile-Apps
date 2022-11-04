@@ -94,7 +94,7 @@ class OIDCViewController: UIViewController {
                                                   scopes: [OIDScopeOpenID, OIDScopeProfile],
                                                   redirectURL: redirectURI,
                                                   responseType: OIDResponseTypeCode,
-                                                  additionalParameters: [OIDCKey.MobilePayload: payload, OIDCKey.Prompt: OIDC.LoginPrompt])
+                                                  additionalParameters: [OIDCKey.MobilePayload: payload, OIDCKey.Prompt: OIDCKey.LoginPrompt])
 
             // performs authentication request
             print("Initiating authorization request with scope: \(request.scope ?? "DEFAULT_SCOPE")")

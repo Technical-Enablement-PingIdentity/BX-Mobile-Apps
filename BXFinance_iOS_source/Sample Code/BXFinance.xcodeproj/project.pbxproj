@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10C32F2523BA595F00FA5E71 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* Constants.swift */; };
+		10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* BXFinance-Constants.swift */; };
 		1C34133525F346CA006947AA /* VerifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34133425F346CA006947AA /* VerifyHomeViewController.swift */; };
+		1C812DA029159826001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
+		1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C81FDF025F2E5C700122720 /* lib_colors.xcassets */; };
 		1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */; };
 		1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */; };
@@ -83,7 +85,7 @@
 		1C927451276143CC000BFD6F /* HomeButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C927453276143CC000BFD6F /* HomeButtonsView.xib */; };
 		1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92745427614489000BFD6F /* HomeButtonLabels.strings */; };
 		1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C927456276144AD000BFD6F /* HomeButtonLabels.strings */; };
-		1C92745B27615DE1000BFD6F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* Constants.swift */; };
+		1C92745B27615DE1000BFD6F /* BXHealth-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */; };
 		1CA13709262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
 		1CA1370A262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA1370B262791B6005F0CDE /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; };
@@ -199,6 +201,7 @@
 		1C34137925F35A1C006947AA /* CommunicationManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CommunicationManager.xcframework; sourceTree = "<group>"; };
 		1C34137A25F35A1C006947AA /* P1Verify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1Verify.xcframework; sourceTree = "<group>"; };
 		1C34137B25F35A1C006947AA /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
+		1C812D9F29159826001CCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
 		1C92744227611C86000BFD6F /* BXHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C92744327611C86000BFD6F /* BXHealth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = BXHealth.plist; path = "/Users/bhavyachauhan/Documents/TechEnablement/BXFinance-Mobile/BXFinance_iOS_source/Sample Code/BXHealth.plist"; sourceTree = "<absolute>"; };
@@ -208,7 +211,7 @@
 		1C927452276143CC000BFD6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/HomeButtonsView.xib; sourceTree = "<group>"; };
 		1C92745427614489000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
 		1C927456276144AD000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
-		1C92745A27615DE1000BFD6F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BXHealth-Constants.swift"; sourceTree = "<group>"; };
 		1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyLib.xcframework; path = ../../SDK/P1VerifyLib.xcframework; sourceTree = "<group>"; };
 		1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyIDSchema.xcframework; path = ../../SDK/P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
 		1CA13702262791B6005F0CDE /* CryptoTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoTools.xcframework; path = ../../SDK/CryptoTools.xcframework; sourceTree = "<group>"; };
@@ -230,7 +233,7 @@
 		7BA52481229AA69B00DD0E06 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		7BA52487229AA7FB00DD0E06 /* SampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SampleApp.entitlements; sourceTree = "<group>"; };
 		7BA92C1D235F00350022D645 /* AppAuth.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AppAuth.xcframework; sourceTree = "<group>"; };
-		7BA92C20235F00440022D645 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7BA92C20235F00440022D645 /* BXFinance-Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BXFinance-Constants.swift"; sourceTree = "<group>"; };
 		7BA92C23235F004C0022D645 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7BA92C26235F00570022D645 /* ActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
 		7BA92C29235F00600022D645 /* OIDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OIDCViewController.swift; sourceTree = "<group>"; };
@@ -316,7 +319,7 @@
 				1C927456276144AD000BFD6F /* HomeButtonLabels.strings */,
 				1C9274472761282A000BFD6F /* lib_colors_bxhealth.xcassets */,
 				1C92744427611EDC000BFD6F /* BXHealth.xcassets */,
-				1C92745A27615DE1000BFD6F /* Constants.swift */,
+				1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */,
 			);
 			path = BXHealth;
 			sourceTree = "<group>";
@@ -354,7 +357,8 @@
 				7B81E4FA2338B7610040DC79 /* PingOne.xcframework */,
 				7BA92C1D235F00350022D645 /* AppAuth.xcframework */,
 				7BA52487229AA7FB00DD0E06 /* SampleApp.entitlements */,
-				7BA92C20235F00440022D645 /* Constants.swift */,
+				7BA92C20235F00440022D645 /* BXFinance-Constants.swift */,
+				1C812D9F29159826001CCCB6 /* Constants.swift */,
 				7BA5246F229AA65200DD0E06 /* AppDelegate.swift */,
 				7BA92C23235F004C0022D645 /* HomeViewController.swift */,
 				7BA52471229AA65200DD0E06 /* ManualPairingViewController.swift */,
@@ -623,7 +627,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */,
-				1C92745B27615DE1000BFD6F /* Constants.swift in Sources */,
+				1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */,
+				1C92745B27615DE1000BFD6F /* BXHealth-Constants.swift in Sources */,
 				1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */,
 				1C9273FB27611C86000BFD6F /* IdvHelper.swift in Sources */,
 				1C9273FC27611C86000BFD6F /* WaitOverlayView.swift in Sources */,
@@ -667,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5787ECA25E9A33400DFC2D5 /* WizardViewController.swift in Sources */,
+				1C812DA029159826001CCCB6 /* Constants.swift in Sources */,
 				D5787EFC25E9A45400DFC2D5 /* CardDetailsViewController.swift in Sources */,
 				D5787ED625E9A37B00DFC2D5 /* IdvHelper.swift in Sources */,
 				D5787EF425E9A3F300DFC2D5 /* WaitOverlayView.swift in Sources */,
@@ -685,7 +691,7 @@
 				7BA92C24235F004D0022D645 /* HomeViewController.swift in Sources */,
 				D5787EDC25E9A3B400DFC2D5 /* StorageProtocol.swift in Sources */,
 				D5787ECE25E9A33400DFC2D5 /* WizardStepViewController.swift in Sources */,
-				10C32F2523BA595F00FA5E71 /* Constants.swift in Sources */,
+				10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */,
 				7BA92C27235F00570022D645 /* ActionItem.swift in Sources */,
 				D5787EFE25E9A45400DFC2D5 /* TicketEntryViewController.swift in Sources */,
 				D5787EEA25E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift in Sources */,
@@ -925,7 +931,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -955,7 +961,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 21;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
