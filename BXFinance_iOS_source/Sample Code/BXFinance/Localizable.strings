@@ -72,3 +72,17 @@
 "Selfie" = "Selfie";
 "Driver License" = "Driver License";
 "Passport" = "Passport";
+
+//MFA_ERRORS - pulled error codes from http://pingone-apidoc.ping-eng.com/pingone/native-sdks/v1/api/#pingone-sdk-for-ios
+"deviceTokenIsMissing_10001" = "Required device token is missing for the requested action.";
+"unrecognizedRemoteNotification_10002" = "Unknown remote notification received.";
+"noConnectivity_10004" = "Check your internet connection and try again.";
+"pairingKey_10005" = "There was a problem with the pairing key. Please try again.";
+"bundleId_10006" = "There was a problem with the bundle id. Please try again.";
+"pairingKeyDataCenterMismatch_10007" = "This device is already paired in another regional data center. One device can be paired in only one regional data center.";
+"deviceIsNotPaired_10008" = "Make sure this device is paired for the requested action.";
+"pushConfirmationTimeout_10009" = "The request timed out. Please try again.";
+"passcodeNotValid_10010" = "Failed to verify the OTP. Please try again.";
+"authCodeInvalid_10011" = "Failed to verify the authentication code. Please try again.";
+"failedPolicyRequirements_10012" = "Your device does not comply with the required policies.";
+"pairingAlreadyRunning_10013" = "Pairring request is already in progress.";
