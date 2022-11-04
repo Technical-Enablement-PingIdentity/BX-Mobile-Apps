@@ -15,12 +15,12 @@ struct Alert{
         var title = Local.Success
         var alertMessage = ""
         
-        if error != nil{
+        if error != nil {
             title = Local.Error
-            alertMessage = error!.description
+            alertMessage = error?.code == nil ? error!.description : Local.getMessageForError(error!)
             print(error!.description)
         }
-        else if message != nil{
+        else if message != nil {
             alertMessage = message!
         }
         
