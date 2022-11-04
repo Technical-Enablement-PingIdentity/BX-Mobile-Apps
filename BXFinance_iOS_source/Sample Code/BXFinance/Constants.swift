@@ -24,10 +24,13 @@ struct OIDC {
      For example: "pingonesdk://sample"
     */
     static let RedirectURI             = "pingonesdk://sample"
+
+    static let LoginPrompt             = "login"
 }
 
 struct OIDCKey {
     static let MobilePayload            = "mobilePayload"
+    static let Prompt                   = "prompt"
 }
 
 struct PairingMethodName {
