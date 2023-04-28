@@ -15,6 +15,10 @@ extension String {
         return self.localized(in: "Localizable")
     }
     
+    func localized(in inFile: String) -> String {
+        return Bundle.main.localizedString(forKey: self, value: nil, table: inFile)
+    }
+    
     func localized(_ args: CVarArg...) -> String {
         return String.init(format: localized, locale: Locale.current, arguments: args)
     }

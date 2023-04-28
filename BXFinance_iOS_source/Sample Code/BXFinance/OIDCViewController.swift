@@ -64,12 +64,7 @@ class OIDCViewController: UIViewController {
     }
     
     @IBAction func LaunchVerify(_ sender: UIButton) {
-        guard let vc = UIStoryboard(name: "Verify", bundle: nil).instantiateInitialViewController() else {
-            return
-        }
-        vc.modalPresentationStyle = .overFullScreen
-        self.definesPresentationContext = true
-        self.navigationController?.present(vc, animated: true, completion: nil)
+        // TODO
     }
     
     func doAuthWithAutoCodeExchange(configuration: OIDServiceConfiguration, clientID: String, clientSecret: String?) {
