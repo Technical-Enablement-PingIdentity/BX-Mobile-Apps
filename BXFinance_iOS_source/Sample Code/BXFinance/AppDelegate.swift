@@ -10,7 +10,7 @@ import UIKit
 import UserNotifications
 import PingOne
 import AppAuth
-import CryptoTools // added from Verify
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -19,11 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     // added from Verify
     var pnToken: Data?
-        var notificationUserInfo: [AnyHashable: Any]? {
-            didSet {
-                NotificationCenter.default.post(name: NSNotification.Name(StorageManager.REMOTE_PUSH_RECEIVED_NOTIFICATION_CENTER_KEY), object: nil, userInfo: self.notificationUserInfo)
-            }
-        }
     
     var currentAuthorizationFlow: OIDExternalUserAgentSession?
     
@@ -33,10 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             window!.overrideUserInterfaceStyle = .light
         }
         self.registerRemoteNotifications()
-        
-        // added from Verify
-        self.notificationUserInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any]
-        
+
         if #available(iOS 15.0, *) {
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.backgroundColor = UIColor(named: "lib_nav_bar_color") ?? UIColor(netHex: 0x456058)
@@ -58,11 +50,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let center  = UNUserNotificationCenter.current()
         center.delegate = self
         center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
+            // This needs to happen whether they granted permissions or not or the
+            // PingOne pairing with the device will fail when they "Add Device"
             if error == nil {
                 // Registering UNNotificationCategories more than once results in previous categories being overwritten. PingOne provides the needed categories. The developer may add categories.
                 UNUserNotificationCenter.current().setNotificationCategories(PingOne.getUNNotificationCategories())
                 DispatchQueue.main.async {
                     UIApplication.shared.registerForRemoteNotifications()
+                }
+            }
+            
+            if !granted {
+                print("Error: User denied permission for push notifications.")
+                
+                let alert = UIAlertController(title: "Notifications Disabled".localized, message: "If you do not wish to enable notifications you will need to be in the BXFinance App on your phone before you attempt to use it for MFA.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
+                alert.addAction(UIAlertAction(title: "Go to Settings".localized, style: UIAlertAction.Style.default, handler: { (_) in
+                    if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
+                    }
+                }))
+                DispatchQueue.main.async {
+                    self.window?.rootViewController?.present(alert, animated: true, completion: nil)
                 }
             }
         }
@@ -74,8 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         
-        // added from Verify
-        print("didRegisterForRemoteNotificationsWithDeviceToken: \(deviceToken.hexDescription)")
+        print("didRegisterForRemoteNotificationsWithDeviceToken: \(deviceToken)")
         self.pnToken = deviceToken
         
         let deviceTokenString = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
@@ -89,30 +97,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         PingOne.setDeviceToken(deviceToken, type: deviceTokenType) { (error) in
             if let error = error{
                 print(error.localizedDescription)
-            }
-        }
-    }
-    
-    // added from Verify
-    public class func registerForAPNS() {
-        DispatchQueue.main.async {
-            let center = UNUserNotificationCenter.current()
-            center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                if let error = error {
-                    print("Error: User denied permission for push notifications. \(error.localizedDescription)")
-                    
-                    let alert = UIAlertController(title: "Notifications Disabled".localized, message: "You must enable notifications for your application to be able to submit data for verification.", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Cancel".localized, style: UIAlertAction.Style.cancel, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Go to Settings".localized, style: UIAlertAction.Style.default, handler: { (_) in
-                        if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
-                            UIApplication.shared.open(settingsUrl, options: [:], completionHandler: nil)
-                        }
-                    }))
-                    alert.show()
-                }
-                DispatchQueue.main.async {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
             }
         }
     }
@@ -147,8 +131,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 if error.code == ErrorCode.unrecognizedRemoteNotification.rawValue{
                     //Unrecognized remote notification.
                     completionHandler(UIBackgroundFetchResult.noData)
-                    self.notificationUserInfo = userInfo
-
                 }
             }
             else if let notificationObject = notificationObject{

@@ -3,79 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103D91DD2A003086003E8892 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; };
+		103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; };
+		103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B88F22A02AF5800A9A9A6 /* String+utilities.swift */; };
 		10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* BXFinance-Constants.swift */; };
-		1C34133525F346CA006947AA /* VerifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34133425F346CA006947AA /* VerifyHomeViewController.swift */; };
 		1C812DA029159826001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C81FDF025F2E5C700122720 /* lib_colors.xcassets */; };
-		1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */; };
-		1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */; };
-		1C9273FB27611C86000BFD6F /* IdvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED325E9A37B00DFC2D5 /* IdvHelper.swift */; };
-		1C9273FC27611C86000BFD6F /* WaitOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */; };
-		1C9273FD27611C86000BFD6F /* CardParamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */; };
-		1C9273FE27611C86000BFD6F /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF725E9A45400DFC2D5 /* QRScannerViewController.swift */; };
-		1C9273FF27611C86000BFD6F /* VerifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C34133425F346CA006947AA /* VerifyHomeViewController.swift */; };
 		1C92740027611C86000BFD6F /* ManualPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA52471229AA65200DD0E06 /* ManualPairingViewController.swift */; };
 		1C92740127611C86000BFD6F /* UIColor+netHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */; };
 		1C92740227611C86000BFD6F /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */; };
-		1C92740327611C86000BFD6F /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDB25E9A3B400DFC2D5 /* StorageManager.swift */; };
-		1C92740427611C86000BFD6F /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED925E9A3B400DFC2D5 /* PersistentStorage.swift */; };
 		1C92740527611C86000BFD6F /* OIDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C29235F00600022D645 /* OIDCViewController.swift */; };
-		1C92740627611C86000BFD6F /* UIView+SlideAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE425E9A3D800DFC2D5 /* UIView+SlideAnimations.swift */; };
-		1C92740727611C86000BFD6F /* PollingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED225E9A37B00DFC2D5 /* PollingHelper.swift */; };
 		1C92740827611C86000BFD6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA5246F229AA65200DD0E06 /* AppDelegate.swift */; };
 		1C92740927611C86000BFD6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C23235F004C0022D645 /* HomeViewController.swift */; };
-		1C92740A27611C86000BFD6F /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED825E9A3B400DFC2D5 /* StorageProtocol.swift */; };
-		1C92740B27611C86000BFD6F /* WizardStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC725E9A33400DFC2D5 /* WizardStepViewController.swift */; };
 		1C92740D27611C86000BFD6F /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C26235F00570022D645 /* ActionItem.swift */; };
-		1C92740E27611C86000BFD6F /* TicketEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */; };
-		1C92740F27611C86000BFD6F /* UIApplication+WaitOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE325E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift */; };
 		1C92741027611C86000BFD6F /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE625E9A3D800DFC2D5 /* String+localized.swift */; };
-		1C92741127611C86000BFD6F /* IDWalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */; };
-		1C92741227611C86000BFD6F /* WizardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC825E9A33400DFC2D5 /* WizardStep.swift */; };
-		1C92741327611C86000BFD6F /* WizardSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC225E9A33400DFC2D5 /* WizardSelfieViewController.swift */; };
-		1C92741427611C86000BFD6F /* UIApplication+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE225E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift */; };
-		1C92741527611C86000BFD6F /* WizardDriverLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC525E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift */; };
-		1C92741627611C86000BFD6F /* TempStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDA25E9A3B400DFC2D5 /* TempStorage.swift */; };
-		1C92741727611C86000BFD6F /* UIImage+FixPortraitOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE525E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift */; };
-		1C92741827611C86000BFD6F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */; };
 		1C92741927611C86000BFD6F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
-		1C92741A27611C86000BFD6F /* WizardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC625E9A33400DFC2D5 /* WizardPageViewController.swift */; };
-		1C92741B27611C86000BFD6F /* IdCardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED125E9A37B00DFC2D5 /* IdCardKeys.swift */; };
-		1C92741C27611C86000BFD6F /* WizardPassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC425E9A33400DFC2D5 /* WizardPassportViewController.swift */; };
-		1C92741E27611C86000BFD6F /* iCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 1C9273F627611C86000BFD6F /* iCarousel */; };
-		1C92741F27611C86000BFD6F /* P1Verify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; };
 		1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
-		1C92742127611C86000BFD6F /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
 		1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; };
-		1C92742327611C86000BFD6F /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; };
-		1C92742427611C86000BFD6F /* CommunicationManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; };
-		1C92742527611C86000BFD6F /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; };
-		1C92742627611C86000BFD6F /* JOSETools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; };
-		1C92742727611C86000BFD6F /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; };
-		1C92742927611C86000BFD6F /* IDWalletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */; };
-		1C92742A27611C86000BFD6F /* IdScanner.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0025E9A48200DFC2D5 /* IdScanner.strings */; };
-		1C92742B27611C86000BFD6F /* CardParamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */; };
 		1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */; };
 		1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */; };
-		1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
 		1C92742F27611C86000BFD6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52481229AA69B00DD0E06 /* Localizable.strings */; };
-		1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
 		1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */; };
 		1C92743427611C86000BFD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
 		1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		1C92743727611C86000BFD6F /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C92743827611C86000BFD6F /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		1C92743A27611C86000BFD6F /* JOSETools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C92743B27611C86000BFD6F /* P1Verify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C92743C27611C86000BFD6F /* P1VerifyIDSchema.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C92743D27611C86000BFD6F /* CommunicationManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C92743E27611C86000BFD6F /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C92744427611EDC000BFD6F /* BXHealth.xcassets */; };
 		1C92744627612441000BFD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52476229AA65300DD0E06 /* Assets.xcassets */; };
 		1C92744927612843000BFD6F /* lib_colors_bxhealth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9274472761282A000BFD6F /* lib_colors_bxhealth.xcassets */; };
@@ -86,20 +44,6 @@
 		1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C92745427614489000BFD6F /* HomeButtonLabels.strings */; };
 		1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C927456276144AD000BFD6F /* HomeButtonLabels.strings */; };
 		1C92745B27615DE1000BFD6F /* BXHealth-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */; };
-		1CA13709262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; };
-		1CA1370A262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CA1370B262791B6005F0CDE /* CryptoTools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; };
-		1CA1370C262791B6005F0CDE /* CryptoTools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13702262791B6005F0CDE /* CryptoTools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CA1370D262791B6005F0CDE /* CommunicationManager.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; };
-		1CA1370E262791B6005F0CDE /* CommunicationManager.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CA1370F262791B6005F0CDE /* P1Verify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; };
-		1CA13710262791B6005F0CDE /* P1Verify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13704262791B6005F0CDE /* P1Verify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CA13711262791B6005F0CDE /* JOSESwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; };
-		1CA13712262791B6005F0CDE /* JOSESwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13705262791B6005F0CDE /* JOSESwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CA13713262791B6005F0CDE /* JOSETools.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; };
-		1CA13714262791B6005F0CDE /* JOSETools.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA13706262791B6005F0CDE /* JOSETools.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1CCD39232785008600C60205 /* P1VerifyLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCD39222785008600C60205 /* P1VerifyLib.xcframework */; };
-		1CCD39242785008600C60205 /* P1VerifyLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCD39222785008600C60205 /* P1VerifyLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B32BA9B23687A46008C1CF5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
 		7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
 		7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -113,40 +57,9 @@
 		7BA92C2A235F00600022D645 /* OIDCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C29235F00600022D645 /* OIDCViewController.swift */; };
 		7BA92C2C235F00AD0022D645 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; };
 		7BA92C2D235F00AD0022D645 /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D5787EC925E9A33400DFC2D5 /* WizardSelfieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC225E9A33400DFC2D5 /* WizardSelfieViewController.swift */; };
-		D5787ECA25E9A33400DFC2D5 /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */; };
-		D5787ECB25E9A33400DFC2D5 /* WizardPassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC425E9A33400DFC2D5 /* WizardPassportViewController.swift */; };
-		D5787ECC25E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC525E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift */; };
-		D5787ECD25E9A33400DFC2D5 /* WizardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC625E9A33400DFC2D5 /* WizardPageViewController.swift */; };
-		D5787ECE25E9A33400DFC2D5 /* WizardStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC725E9A33400DFC2D5 /* WizardStepViewController.swift */; };
-		D5787ECF25E9A33400DFC2D5 /* WizardStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EC825E9A33400DFC2D5 /* WizardStep.swift */; };
-		D5787ED425E9A37B00DFC2D5 /* IdCardKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED125E9A37B00DFC2D5 /* IdCardKeys.swift */; };
-		D5787ED525E9A37B00DFC2D5 /* PollingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED225E9A37B00DFC2D5 /* PollingHelper.swift */; };
-		D5787ED625E9A37B00DFC2D5 /* IdvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED325E9A37B00DFC2D5 /* IdvHelper.swift */; };
-		D5787EDC25E9A3B400DFC2D5 /* StorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED825E9A3B400DFC2D5 /* StorageProtocol.swift */; };
-		D5787EDD25E9A3B400DFC2D5 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787ED925E9A3B400DFC2D5 /* PersistentStorage.swift */; };
-		D5787EDE25E9A3B400DFC2D5 /* TempStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDA25E9A3B400DFC2D5 /* TempStorage.swift */; };
-		D5787EDF25E9A3B400DFC2D5 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EDB25E9A3B400DFC2D5 /* StorageManager.swift */; };
 		D5787EE825E9A3D800DFC2D5 /* UIColor+netHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */; };
-		D5787EE925E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE225E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift */; };
-		D5787EEA25E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE325E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift */; };
-		D5787EEB25E9A3D800DFC2D5 /* UIView+SlideAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE425E9A3D800DFC2D5 /* UIView+SlideAnimations.swift */; };
-		D5787EEC25E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE525E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift */; };
 		D5787EED25E9A3D800DFC2D5 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE625E9A3D800DFC2D5 /* String+localized.swift */; };
 		D5787EEE25E9A3D800DFC2D5 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */; };
-		D5787EF325E9A3F300DFC2D5 /* IDWalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */; };
-		D5787EF425E9A3F300DFC2D5 /* WaitOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */; };
-		D5787EF525E9A3F300DFC2D5 /* CardParamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */; };
-		D5787EFB25E9A45400DFC2D5 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF725E9A45400DFC2D5 /* QRScannerViewController.swift */; };
-		D5787EFC25E9A45400DFC2D5 /* CardDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */; };
-		D5787EFD25E9A45400DFC2D5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */; };
-		D5787EFE25E9A45400DFC2D5 /* TicketEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */; };
-		D5787F0225E9A48200DFC2D5 /* IdScanner.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0025E9A48200DFC2D5 /* IdScanner.strings */; };
-		D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */; };
-		D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */; };
-		D5787F0825E9A4A600DFC2D5 /* IDWalletCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */; };
-		D5787F0925E9A4A600DFC2D5 /* CardParamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */; };
-		D5787F0E25EFEB6900DFC2D5 /* iCarousel in Frameworks */ = {isa = PBXBuildFile; productRef = D5787F0D25EFEB6900DFC2D5 /* iCarousel */; };
 		D5869155258BFFB700FAFD07 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */; };
 		D5869157258BFFF500FAFD07 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */; };
 /* End PBXBuildFile section */
@@ -159,14 +72,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */,
-				1C92743727611C86000BFD6F /* P1VerifyLib.xcframework in Embed Frameworks */,
-				1C92743827611C86000BFD6F /* JOSESwift.xcframework in Embed Frameworks */,
 				1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */,
-				1C92743A27611C86000BFD6F /* JOSETools.xcframework in Embed Frameworks */,
-				1C92743B27611C86000BFD6F /* P1Verify.xcframework in Embed Frameworks */,
-				1C92743C27611C86000BFD6F /* P1VerifyIDSchema.xcframework in Embed Frameworks */,
-				1C92743D27611C86000BFD6F /* CommunicationManager.xcframework in Embed Frameworks */,
-				1C92743E27611C86000BFD6F /* CryptoTools.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,15 +83,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */,
 				7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */,
-				1CA13712262791B6005F0CDE /* JOSESwift.xcframework in Embed Frameworks */,
 				7BA92C2D235F00AD0022D645 /* AppAuth.xcframework in Embed Frameworks */,
-				1CA13714262791B6005F0CDE /* JOSETools.xcframework in Embed Frameworks */,
-				1CA13710262791B6005F0CDE /* P1Verify.xcframework in Embed Frameworks */,
-				1CA1370A262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Embed Frameworks */,
-				1CA1370E262791B6005F0CDE /* CommunicationManager.xcframework in Embed Frameworks */,
-				1CCD39242785008600C60205 /* P1VerifyLib.xcframework in Embed Frameworks */,
-				1CA1370C262791B6005F0CDE /* CryptoTools.xcframework in Embed Frameworks */,
+				103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,14 +94,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C34133425F346CA006947AA /* VerifyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyHomeViewController.swift; sourceTree = "<group>"; };
+		103D91DB2A003085003E8892 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PingOneVerify.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/PingOneVerify.xcframework"; sourceTree = "<group>"; };
+		103D91DC2A003085003E8892 /* Microblink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Microblink.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/Microblink.xcframework"; sourceTree = "<group>"; };
+		106B88F22A02AF5800A9A9A6 /* String+utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+utilities.swift"; sourceTree = "<group>"; };
 		1C34133725F34775006947AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		1C34137625F35A1C006947AA /* JOSESwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JOSESwift.xcframework; sourceTree = "<group>"; };
-		1C34137725F35A1C006947AA /* JOSETools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = JOSETools.xcframework; sourceTree = "<group>"; };
-		1C34137825F35A1C006947AA /* CryptoTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CryptoTools.xcframework; sourceTree = "<group>"; };
-		1C34137925F35A1C006947AA /* CommunicationManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = CommunicationManager.xcframework; sourceTree = "<group>"; };
-		1C34137A25F35A1C006947AA /* P1Verify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1Verify.xcframework; sourceTree = "<group>"; };
-		1C34137B25F35A1C006947AA /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
 		1C812D9F29159826001CCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
 		1C92744227611C86000BFD6F /* BXHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,14 +109,6 @@
 		1C92745427614489000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
 		1C927456276144AD000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
 		1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BXHealth-Constants.swift"; sourceTree = "<group>"; };
-		1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyLib.xcframework; path = ../../SDK/P1VerifyLib.xcframework; sourceTree = "<group>"; };
-		1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyIDSchema.xcframework; path = ../../SDK/P1VerifyIDSchema.xcframework; sourceTree = "<group>"; };
-		1CA13702262791B6005F0CDE /* CryptoTools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoTools.xcframework; path = ../../SDK/CryptoTools.xcframework; sourceTree = "<group>"; };
-		1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CommunicationManager.xcframework; path = ../../SDK/CommunicationManager.xcframework; sourceTree = "<group>"; };
-		1CA13704262791B6005F0CDE /* P1Verify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1Verify.xcframework; path = ../../SDK/P1Verify.xcframework; sourceTree = "<group>"; };
-		1CA13705262791B6005F0CDE /* JOSESwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JOSESwift.xcframework; path = ../../SDK/JOSESwift.xcframework; sourceTree = "<group>"; };
-		1CA13706262791B6005F0CDE /* JOSETools.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = JOSETools.xcframework; path = ../../SDK/JOSETools.xcframework; sourceTree = "<group>"; };
-		1CCD39222785008600C60205 /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = P1VerifyLib.xcframework; path = ../../SDK/P1VerifyLib.xcframework; sourceTree = "<group>"; };
 		7B32BA9A23687A46008C1CF5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		7B81E4FA2338B7610040DC79 /* PingOne.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOne.xcframework; sourceTree = "<group>"; };
 		7B9C1FED23585AEF0069315F /* Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Debug-Info.plist"; sourceTree = "<group>"; };
@@ -237,40 +126,9 @@
 		7BA92C23235F004C0022D645 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7BA92C26235F00570022D645 /* ActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionItem.swift; sourceTree = "<group>"; };
 		7BA92C29235F00600022D645 /* OIDCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OIDCViewController.swift; sourceTree = "<group>"; };
-		D5787EB425E9A01500DFC2D5 /* P1VerifyLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = P1VerifyLib.xcframework; sourceTree = "<group>"; };
-		D5787EC225E9A33400DFC2D5 /* WizardSelfieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardSelfieViewController.swift; sourceTree = "<group>"; };
-		D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardViewController.swift; sourceTree = "<group>"; };
-		D5787EC425E9A33400DFC2D5 /* WizardPassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardPassportViewController.swift; sourceTree = "<group>"; };
-		D5787EC525E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardDriverLicenseViewController.swift; sourceTree = "<group>"; };
-		D5787EC625E9A33400DFC2D5 /* WizardPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardPageViewController.swift; sourceTree = "<group>"; };
-		D5787EC725E9A33400DFC2D5 /* WizardStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardStepViewController.swift; sourceTree = "<group>"; };
-		D5787EC825E9A33400DFC2D5 /* WizardStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WizardStep.swift; sourceTree = "<group>"; };
-		D5787ED125E9A37B00DFC2D5 /* IdCardKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdCardKeys.swift; sourceTree = "<group>"; };
-		D5787ED225E9A37B00DFC2D5 /* PollingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollingHelper.swift; sourceTree = "<group>"; };
-		D5787ED325E9A37B00DFC2D5 /* IdvHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdvHelper.swift; sourceTree = "<group>"; };
-		D5787ED825E9A3B400DFC2D5 /* StorageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProtocol.swift; sourceTree = "<group>"; };
-		D5787ED925E9A3B400DFC2D5 /* PersistentStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
-		D5787EDA25E9A3B400DFC2D5 /* TempStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempStorage.swift; sourceTree = "<group>"; };
-		D5787EDB25E9A3B400DFC2D5 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+netHex.swift"; sourceTree = "<group>"; };
-		D5787EE225E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+ErrorAlert.swift"; sourceTree = "<group>"; };
-		D5787EE325E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+WaitOverlay.swift"; sourceTree = "<group>"; };
-		D5787EE425E9A3D800DFC2D5 /* UIView+SlideAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SlideAnimations.swift"; sourceTree = "<group>"; };
-		D5787EE525E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+FixPortraitOrientation.swift"; sourceTree = "<group>"; };
 		D5787EE625E9A3D800DFC2D5 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 		D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
-		D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDWalletCardView.swift; sourceTree = "<group>"; };
-		D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitOverlayView.swift; sourceTree = "<group>"; };
-		D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardParamTableViewCell.swift; sourceTree = "<group>"; };
-		D5787EF725E9A45400DFC2D5 /* QRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
-		D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailsViewController.swift; sourceTree = "<group>"; };
-		D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketEntryViewController.swift; sourceTree = "<group>"; };
-		D5787F0025E9A48200DFC2D5 /* IdScanner.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = IdScanner.strings; sourceTree = "<group>"; };
-		D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SelfieCapture.strings; sourceTree = "<group>"; };
-		D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitOverlayView.xib; sourceTree = "<group>"; };
-		D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IDWalletCardView.xib; sourceTree = "<group>"; };
-		D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardParamTableViewCell.xib; sourceTree = "<group>"; };
 		D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,16 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C92741E27611C86000BFD6F /* iCarousel in Frameworks */,
-				1C92741F27611C86000BFD6F /* P1Verify.xcframework in Frameworks */,
 				1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */,
-				1C92742127611C86000BFD6F /* P1VerifyIDSchema.xcframework in Frameworks */,
 				1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */,
-				1C92742327611C86000BFD6F /* CryptoTools.xcframework in Frameworks */,
-				1C92742427611C86000BFD6F /* CommunicationManager.xcframework in Frameworks */,
-				1C92742527611C86000BFD6F /* JOSESwift.xcframework in Frameworks */,
-				1C92742627611C86000BFD6F /* JOSETools.xcframework in Frameworks */,
-				1C92742727611C86000BFD6F /* P1VerifyLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,16 +147,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5787F0E25EFEB6900DFC2D5 /* iCarousel in Frameworks */,
-				1CA1370F262791B6005F0CDE /* P1Verify.xcframework in Frameworks */,
+				103D91DD2A003086003E8892 /* PingOneVerify.xcframework in Frameworks */,
 				7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */,
-				1CA13709262791B6005F0CDE /* P1VerifyIDSchema.xcframework in Frameworks */,
 				7BA92C2C235F00AD0022D645 /* AppAuth.xcframework in Frameworks */,
-				1CA1370B262791B6005F0CDE /* CryptoTools.xcframework in Frameworks */,
-				1CA1370D262791B6005F0CDE /* CommunicationManager.xcframework in Frameworks */,
-				1CA13711262791B6005F0CDE /* JOSESwift.xcframework in Frameworks */,
-				1CA13713262791B6005F0CDE /* JOSETools.xcframework in Frameworks */,
-				1CCD39232785008600C60205 /* P1VerifyLib.xcframework in Frameworks */,
+				103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,12 +192,8 @@
 			children = (
 				1C92745927615C28000BFD6F /* BXHealth */,
 				D5787EFF25E9A47100DFC2D5 /* resources */,
-				D5787EF625E9A44600DFC2D5 /* viewcontrollers */,
 				D5787EEF25E9A3E600DFC2D5 /* views */,
 				D5787EE025E9A3CA00DFC2D5 /* extensions */,
-				D5787ED725E9A3A200DFC2D5 /* storage */,
-				D5787ED025E9A36D00DFC2D5 /* utils */,
-				D5787EC125E9A30800DFC2D5 /* wizard */,
 				7B81E4FA2338B7610040DC79 /* PingOne.xcframework */,
 				7BA92C1D235F00350022D645 /* AppAuth.xcframework */,
 				7BA52487229AA7FB00DD0E06 /* SampleApp.entitlements */,
@@ -381,70 +221,19 @@
 		D5787EB225E99F6400DFC2D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1CCD39222785008600C60205 /* P1VerifyLib.xcframework */,
-				1CA13703262791B6005F0CDE /* CommunicationManager.xcframework */,
-				1CA13702262791B6005F0CDE /* CryptoTools.xcframework */,
-				1CA13705262791B6005F0CDE /* JOSESwift.xcframework */,
-				1CA13706262791B6005F0CDE /* JOSETools.xcframework */,
-				1CA13704262791B6005F0CDE /* P1Verify.xcframework */,
-				1CA13701262791B6005F0CDE /* P1VerifyIDSchema.xcframework */,
-				1CA13700262791B6005F0CDE /* P1VerifyLib.xcframework */,
-				1C34137925F35A1C006947AA /* CommunicationManager.xcframework */,
-				1C34137825F35A1C006947AA /* CryptoTools.xcframework */,
-				1C34137625F35A1C006947AA /* JOSESwift.xcframework */,
-				1C34137725F35A1C006947AA /* JOSETools.xcframework */,
-				1C34137A25F35A1C006947AA /* P1Verify.xcframework */,
-				1C34137B25F35A1C006947AA /* P1VerifyIDSchema.xcframework */,
-				D5787EB425E9A01500DFC2D5 /* P1VerifyLib.xcframework */,
+				103D91DC2A003085003E8892 /* Microblink.xcframework */,
+				103D91DB2A003085003E8892 /* PingOneVerify.xcframework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		D5787EC125E9A30800DFC2D5 /* wizard */ = {
-			isa = PBXGroup;
-			children = (
-				D5787EC525E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift */,
-				D5787EC625E9A33400DFC2D5 /* WizardPageViewController.swift */,
-				D5787EC425E9A33400DFC2D5 /* WizardPassportViewController.swift */,
-				D5787EC225E9A33400DFC2D5 /* WizardSelfieViewController.swift */,
-				D5787EC825E9A33400DFC2D5 /* WizardStep.swift */,
-				D5787EC725E9A33400DFC2D5 /* WizardStepViewController.swift */,
-				D5787EC325E9A33400DFC2D5 /* WizardViewController.swift */,
-			);
-			path = wizard;
-			sourceTree = "<group>";
-		};
-		D5787ED025E9A36D00DFC2D5 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				D5787ED125E9A37B00DFC2D5 /* IdCardKeys.swift */,
-				D5787ED325E9A37B00DFC2D5 /* IdvHelper.swift */,
-				D5787ED225E9A37B00DFC2D5 /* PollingHelper.swift */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		D5787ED725E9A3A200DFC2D5 /* storage */ = {
-			isa = PBXGroup;
-			children = (
-				D5787ED925E9A3B400DFC2D5 /* PersistentStorage.swift */,
-				D5787EDB25E9A3B400DFC2D5 /* StorageManager.swift */,
-				D5787ED825E9A3B400DFC2D5 /* StorageProtocol.swift */,
-				D5787EDA25E9A3B400DFC2D5 /* TempStorage.swift */,
-			);
-			path = storage;
 			sourceTree = "<group>";
 		};
 		D5787EE025E9A3CA00DFC2D5 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				D5787EE625E9A3D800DFC2D5 /* String+localized.swift */,
-				D5787EE225E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift */,
-				D5787EE325E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift */,
 				D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */,
-				D5787EE525E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift */,
 				D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */,
-				D5787EE425E9A3D800DFC2D5 /* UIView+SlideAnimations.swift */,
+				106B88F22A02AF5800A9A9A6 /* String+utilities.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -453,33 +242,13 @@
 			isa = PBXGroup;
 			children = (
 				1C92744C27613F22000BFD6F /* HomeButtonsView.swift */,
-				D5787EF225E9A3F300DFC2D5 /* CardParamTableViewCell.swift */,
-				D5787EF025E9A3F300DFC2D5 /* IDWalletCardView.swift */,
-				D5787EF125E9A3F300DFC2D5 /* WaitOverlayView.swift */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		D5787EF625E9A44600DFC2D5 /* viewcontrollers */ = {
-			isa = PBXGroup;
-			children = (
-				1C34133425F346CA006947AA /* VerifyHomeViewController.swift */,
-				D5787EF825E9A45400DFC2D5 /* CardDetailsViewController.swift */,
-				D5787EF725E9A45400DFC2D5 /* QRScannerViewController.swift */,
-				D5787EF925E9A45400DFC2D5 /* SettingsViewController.swift */,
-				D5787EFA25E9A45400DFC2D5 /* TicketEntryViewController.swift */,
-			);
-			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
 		D5787EFF25E9A47100DFC2D5 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				D5787F0625E9A4A600DFC2D5 /* CardParamTableViewCell.xib */,
-				D5787F0525E9A4A600DFC2D5 /* IDWalletCardView.xib */,
-				D5787F0425E9A4A600DFC2D5 /* WaitOverlayView.xib */,
-				D5787F0025E9A48200DFC2D5 /* IdScanner.strings */,
-				D5787F0125E9A48200DFC2D5 /* SelfieCapture.strings */,
 				1C81FDF025F2E5C700122720 /* lib_colors.xcassets */,
 				1C927453276143CC000BFD6F /* HomeButtonsView.xib */,
 			);
@@ -504,7 +273,6 @@
 			);
 			name = BXHealth;
 			packageProductDependencies = (
-				1C9273F627611C86000BFD6F /* iCarousel */,
 			);
 			productName = SampleApp;
 			productReference = 1C92744227611C86000BFD6F /* BXHealth.app */;
@@ -525,7 +293,6 @@
 			);
 			name = BXFinance;
 			packageProductDependencies = (
-				D5787F0D25EFEB6900DFC2D5 /* iCarousel */,
 			);
 			productName = SampleApp;
 			productReference = 7BA5246C229AA65200DD0E06 /* BXFinance.app */;
@@ -537,8 +304,9 @@
 		7BA52464229AA65200DD0E06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Ping Identity";
 				TargetAttributes = {
 					7BA5246B229AA65200DD0E06 = {
@@ -564,7 +332,6 @@
 			);
 			mainGroup = 7BA52463229AA65200DD0E06;
 			packageReferences = (
-				D5787F0C25EFEB6900DFC2D5 /* XCRemoteSwiftPackageReference "iCarousel" */,
 			);
 			productRefGroup = 7BA5246D229AA65200DD0E06 /* Products */;
 			projectDirPath = "";
@@ -581,17 +348,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C92742927611C86000BFD6F /* IDWalletCardView.xib in Resources */,
 				1C92744927612843000BFD6F /* lib_colors_bxhealth.xcassets in Resources */,
 				1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */,
-				1C92742A27611C86000BFD6F /* IdScanner.strings in Resources */,
-				1C92742B27611C86000BFD6F /* CardParamTableViewCell.xib in Resources */,
 				1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */,
 				1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */,
-				1C92742E27611C86000BFD6F /* WaitOverlayView.xib in Resources */,
 				1C92742F27611C86000BFD6F /* Localizable.strings in Resources */,
 				1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */,
-				1C92743027611C86000BFD6F /* SelfieCapture.strings in Resources */,
 				1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */,
 				1C927451276143CC000BFD6F /* HomeButtonsView.xib in Resources */,
 				1C92743427611C86000BFD6F /* Main.storyboard in Resources */,
@@ -602,15 +364,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5787F0825E9A4A600DFC2D5 /* IDWalletCardView.xib in Resources */,
-				D5787F0225E9A48200DFC2D5 /* IdScanner.strings in Resources */,
-				D5787F0925E9A4A600DFC2D5 /* CardParamTableViewCell.xib in Resources */,
 				D5869155258BFFB700FAFD07 /* Rubik-Regular.ttf in Resources */,
 				7BA5247A229AA65300DD0E06 /* LaunchScreen.storyboard in Resources */,
-				D5787F0725E9A4A600DFC2D5 /* WaitOverlayView.xib in Resources */,
 				1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */,
 				7BA52482229AA69B00DD0E06 /* Localizable.strings in Resources */,
-				D5787F0325E9A48200DFC2D5 /* SelfieCapture.strings in Resources */,
 				D5869157258BFFF500FAFD07 /* Rubik-Bold.ttf in Resources */,
 				1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */,
 				1C92744627612441000BFD6F /* Assets.xcassets in Resources */,
@@ -626,44 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9273F927611C86000BFD6F /* WizardViewController.swift in Sources */,
 				1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */,
 				1C92745B27615DE1000BFD6F /* BXHealth-Constants.swift in Sources */,
-				1C9273FA27611C86000BFD6F /* CardDetailsViewController.swift in Sources */,
-				1C9273FB27611C86000BFD6F /* IdvHelper.swift in Sources */,
-				1C9273FC27611C86000BFD6F /* WaitOverlayView.swift in Sources */,
-				1C9273FD27611C86000BFD6F /* CardParamTableViewCell.swift in Sources */,
-				1C9273FE27611C86000BFD6F /* QRScannerViewController.swift in Sources */,
-				1C9273FF27611C86000BFD6F /* VerifyHomeViewController.swift in Sources */,
 				1C92740027611C86000BFD6F /* ManualPairingViewController.swift in Sources */,
 				1C92740127611C86000BFD6F /* UIColor+netHex.swift in Sources */,
 				1C92740227611C86000BFD6F /* UIView+Border.swift in Sources */,
-				1C92740327611C86000BFD6F /* StorageManager.swift in Sources */,
-				1C92740427611C86000BFD6F /* PersistentStorage.swift in Sources */,
 				1C92740527611C86000BFD6F /* OIDCViewController.swift in Sources */,
-				1C92740627611C86000BFD6F /* UIView+SlideAnimations.swift in Sources */,
-				1C92740727611C86000BFD6F /* PollingHelper.swift in Sources */,
 				1C92740827611C86000BFD6F /* AppDelegate.swift in Sources */,
 				1C92740927611C86000BFD6F /* HomeViewController.swift in Sources */,
-				1C92740A27611C86000BFD6F /* StorageProtocol.swift in Sources */,
-				1C92740B27611C86000BFD6F /* WizardStepViewController.swift in Sources */,
 				1C92740D27611C86000BFD6F /* ActionItem.swift in Sources */,
-				1C92740E27611C86000BFD6F /* TicketEntryViewController.swift in Sources */,
-				1C92740F27611C86000BFD6F /* UIApplication+WaitOverlay.swift in Sources */,
 				1C92741027611C86000BFD6F /* String+localized.swift in Sources */,
-				1C92741127611C86000BFD6F /* IDWalletCardView.swift in Sources */,
-				1C92741227611C86000BFD6F /* WizardStep.swift in Sources */,
-				1C92741327611C86000BFD6F /* WizardSelfieViewController.swift in Sources */,
-				1C92741427611C86000BFD6F /* UIApplication+ErrorAlert.swift in Sources */,
-				1C92741527611C86000BFD6F /* WizardDriverLicenseViewController.swift in Sources */,
-				1C92741627611C86000BFD6F /* TempStorage.swift in Sources */,
 				1C92744F27614008000BFD6F /* HomeButtonsView.swift in Sources */,
-				1C92741727611C86000BFD6F /* UIImage+FixPortraitOrientation.swift in Sources */,
-				1C92741827611C86000BFD6F /* SettingsViewController.swift in Sources */,
 				1C92741927611C86000BFD6F /* Alert.swift in Sources */,
-				1C92741A27611C86000BFD6F /* WizardPageViewController.swift in Sources */,
-				1C92741B27611C86000BFD6F /* IdCardKeys.swift in Sources */,
-				1C92741C27611C86000BFD6F /* WizardPassportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,44 +402,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5787ECA25E9A33400DFC2D5 /* WizardViewController.swift in Sources */,
 				1C812DA029159826001CCCB6 /* Constants.swift in Sources */,
-				D5787EFC25E9A45400DFC2D5 /* CardDetailsViewController.swift in Sources */,
-				D5787ED625E9A37B00DFC2D5 /* IdvHelper.swift in Sources */,
-				D5787EF425E9A3F300DFC2D5 /* WaitOverlayView.swift in Sources */,
-				D5787EF525E9A3F300DFC2D5 /* CardParamTableViewCell.swift in Sources */,
-				D5787EFB25E9A45400DFC2D5 /* QRScannerViewController.swift in Sources */,
-				1C34133525F346CA006947AA /* VerifyHomeViewController.swift in Sources */,
 				7BA52472229AA65200DD0E06 /* ManualPairingViewController.swift in Sources */,
 				D5787EE825E9A3D800DFC2D5 /* UIColor+netHex.swift in Sources */,
+				106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */,
 				D5787EEE25E9A3D800DFC2D5 /* UIView+Border.swift in Sources */,
-				D5787EDF25E9A3B400DFC2D5 /* StorageManager.swift in Sources */,
-				D5787EDD25E9A3B400DFC2D5 /* PersistentStorage.swift in Sources */,
 				7BA92C2A235F00600022D645 /* OIDCViewController.swift in Sources */,
-				D5787EEB25E9A3D800DFC2D5 /* UIView+SlideAnimations.swift in Sources */,
-				D5787ED525E9A37B00DFC2D5 /* PollingHelper.swift in Sources */,
 				7BA52470229AA65200DD0E06 /* AppDelegate.swift in Sources */,
 				7BA92C24235F004D0022D645 /* HomeViewController.swift in Sources */,
-				D5787EDC25E9A3B400DFC2D5 /* StorageProtocol.swift in Sources */,
-				D5787ECE25E9A33400DFC2D5 /* WizardStepViewController.swift in Sources */,
 				10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */,
 				7BA92C27235F00570022D645 /* ActionItem.swift in Sources */,
-				D5787EFE25E9A45400DFC2D5 /* TicketEntryViewController.swift in Sources */,
-				D5787EEA25E9A3D800DFC2D5 /* UIApplication+WaitOverlay.swift in Sources */,
 				D5787EED25E9A3D800DFC2D5 /* String+localized.swift in Sources */,
-				D5787EF325E9A3F300DFC2D5 /* IDWalletCardView.swift in Sources */,
-				D5787ECF25E9A33400DFC2D5 /* WizardStep.swift in Sources */,
-				D5787EC925E9A33400DFC2D5 /* WizardSelfieViewController.swift in Sources */,
-				D5787EE925E9A3D800DFC2D5 /* UIApplication+ErrorAlert.swift in Sources */,
-				D5787ECC25E9A33400DFC2D5 /* WizardDriverLicenseViewController.swift in Sources */,
-				D5787EDE25E9A3B400DFC2D5 /* TempStorage.swift in Sources */,
 				1C92744D27613F22000BFD6F /* HomeButtonsView.swift in Sources */,
-				D5787EEC25E9A3D800DFC2D5 /* UIImage+FixPortraitOrientation.swift in Sources */,
-				D5787EFD25E9A45400DFC2D5 /* SettingsViewController.swift in Sources */,
 				7B32BA9B23687A46008C1CF5 /* Alert.swift in Sources */,
-				D5787ECD25E9A33400DFC2D5 /* WizardPageViewController.swift in Sources */,
-				D5787ED425E9A37B00DFC2D5 /* IdCardKeys.swift in Sources */,
-				D5787ECB25E9A33400DFC2D5 /* WizardPassportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -763,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -792,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxhealth.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -944,7 +650,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -973,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1014,38 +720,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1C9273F727611C86000BFD6F /* XCRemoteSwiftPackageReference "iCarousel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ShoCardInc/iCarousel";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		D5787F0C25EFEB6900DFC2D5 /* XCRemoteSwiftPackageReference "iCarousel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ShoCardInc/iCarousel";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1C9273F627611C86000BFD6F /* iCarousel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1C9273F727611C86000BFD6F /* XCRemoteSwiftPackageReference "iCarousel" */;
-			productName = iCarousel;
-		};
-		D5787F0D25EFEB6900DFC2D5 /* iCarousel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D5787F0C25EFEB6900DFC2D5 /* XCRemoteSwiftPackageReference "iCarousel" */;
-			productName = iCarousel;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BA52464229AA65200DD0E06 /* Project object */;
 }
