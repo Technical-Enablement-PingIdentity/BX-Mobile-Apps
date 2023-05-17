@@ -19,11 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     // added from Verify
     var pnToken: Data?
-        var notificationUserInfo: [AnyHashable: Any]? {
-            didSet {
-                NotificationCenter.default.post(name: NSNotification.Name("remote_push_received_notification_center_key"), object: nil, userInfo: self.notificationUserInfo)
-            }
-        }
     
     var currentAuthorizationFlow: OIDExternalUserAgentSession?
     
@@ -33,10 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             window!.overrideUserInterfaceStyle = .light
         }
         self.registerRemoteNotifications()
-        
-        // added from Verify
-        self.notificationUserInfo = launchOptions?[.remoteNotification] as? [AnyHashable: Any]
-        
+
         if #available(iOS 15.0, *) {
             let navigationBarAppearance = UINavigationBarAppearance()
             navigationBarAppearance.backgroundColor = UIColor(named: "lib_nav_bar_color") ?? UIColor(netHex: 0x456058)
@@ -139,8 +131,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 if error.code == ErrorCode.unrecognizedRemoteNotification.rawValue{
                     //Unrecognized remote notification.
                     completionHandler(UIBackgroundFetchResult.noData)
-                    self.notificationUserInfo = userInfo
-
                 }
             }
             else if let notificationObject = notificationObject{

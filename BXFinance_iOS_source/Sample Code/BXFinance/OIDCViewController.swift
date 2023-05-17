@@ -16,8 +16,7 @@ class OIDCViewController: UIViewController {
     @IBOutlet weak var buttonsImageView: UIImageView!
     @IBOutlet weak var verifyButton: UIButton!
     
-    var verifiedFirstName = ""
-    var verifiedLastName = ""
+    var verifiedName: String? = nil
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -165,13 +164,15 @@ extension OIDCViewController: DocumentSubmissionListener {
             print("\(key): \(value)")
         }
         
-        self.verifiedFirstName = (documents["firstName"] ?? "").capitalized
-        self.verifiedLastName = (documents["lastName"] ?? "").capitalized
+        if let verifiedFirstName = documents["firstName"],
+           let verifiedLastName = documents["lastName"] {
+            self.verifiedName = "\(verifiedFirstName.capitalized) \(verifiedLastName.capitalized)"
+        }
     }
     
     func onSubmissionComplete(status: DocumentSubmissionStatus) {
         // present a basic alert to indicate completion
-        let alertController = UIAlertController(title: "Document Submission Complete", message: "All documents for \(self.verifiedFirstName) \(self.verifiedLastName) have been submitted and verification has successfully completed.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Document Submission Complete", message: "All documents\(self.verifiedName != nil ? " for " + self.verifiedName! : "") have been submitted and verification has successfully completed.", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Okay", style: .default))
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // need to wait for verify to close
             self.present(alertController, animated: true, completion: nil)
