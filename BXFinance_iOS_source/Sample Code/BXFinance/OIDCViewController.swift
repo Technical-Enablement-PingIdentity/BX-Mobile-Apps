@@ -9,11 +9,15 @@
 import UIKit
 import AppAuth
 import PingOne
+import PingOneVerify_iOS
 
 class OIDCViewController: UIViewController {
 
     @IBOutlet weak var buttonsImageView: UIImageView!
     @IBOutlet weak var verifyButton: UIButton!
+    
+    var verifiedFirstName = ""
+    var verifiedLastName = ""
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -64,7 +68,25 @@ class OIDCViewController: UIViewController {
     }
     
     @IBAction func LaunchVerify(_ sender: UIButton) {
-        // TODO
+        PingOneVerifyClient.Builder()
+            .setListener(self)
+            .setRootViewController(self)
+            .startVerification { pingOneVerifyClient, clientBuilderError in
+                if let clientBuilderError = clientBuilderError {
+                    logerror(clientBuilderError.localizedDescription ?? "")
+                    let alertController = UIAlertController(title: "Client Builder Error", message: clientBuilderError.localizedDescription, preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+                    if let presentedViewController = self.presentedViewController {
+                        presentedViewController.dismiss(animated: true) {
+                            self.present(alertController, animated: true)
+                        }
+                    } else {
+                        self.present(alertController, animated: true)
+                    }
+                } else {
+                    //Client object was initialized successfully and the SDK will return the results in callback methods
+                }
+            }
     }
     
     func doAuthWithAutoCodeExchange(configuration: OIDServiceConfiguration, clientID: String, clientSecret: String?) {
@@ -130,5 +152,33 @@ class OIDCViewController: UIViewController {
                 }
             }
         }
+    }
+}
+
+extension OIDCViewController: DocumentSubmissionListener {
+    func onDocumentSubmitted(response: DocumentSubmissionResponse) {
+        print("The document status is \(String(describing: response.documentStatus))")
+        print("The document submission status is \(String(describing: response.documentSubmissionStatus))")
+            
+        guard let documents = response.document else { return }
+        for (key, value) in documents {
+            print("\(key): \(value)")
+        }
+        
+        self.verifiedFirstName = (documents["firstName"] ?? "").capitalized
+        self.verifiedLastName = (documents["lastName"] ?? "").capitalized
+    }
+    
+    func onSubmissionComplete(status: DocumentSubmissionStatus) {
+        // present a basic alert to indicate completion
+        let alertController = UIAlertController(title: "Document Submission Complete", message: "All documents for \(self.verifiedFirstName) \(self.verifiedLastName) have been submitted and verification has successfully completed.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // need to wait for verify to close
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func onSubmissionError(error: DocumentSubmissionError) {
+        print(error.localizedDescription ?? "Unknown submission error occurred")
     }
 }

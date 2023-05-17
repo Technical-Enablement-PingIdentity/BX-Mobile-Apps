@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103D91DD2A003086003E8892 /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; };
+		103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; };
+		103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B88F22A02AF5800A9A9A6 /* String+utilities.swift */; };
 		10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* BXFinance-Constants.swift */; };
 		1C812DA029159826001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
@@ -78,8 +83,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */,
 				7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */,
 				7BA92C2D235F00AD0022D645 /* AppAuth.xcframework in Embed Frameworks */,
+				103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +94,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		103D91DB2A003085003E8892 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PingOneVerify.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/PingOneVerify.xcframework"; sourceTree = "<group>"; };
+		103D91DC2A003085003E8892 /* Microblink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Microblink.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/Microblink.xcframework"; sourceTree = "<group>"; };
+		106B88F22A02AF5800A9A9A6 /* String+utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+utilities.swift"; sourceTree = "<group>"; };
 		1C34133725F34775006947AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1C812D9F29159826001CCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
@@ -137,8 +147,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103D91DD2A003086003E8892 /* PingOneVerify.xcframework in Frameworks */,
 				7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */,
 				7BA92C2C235F00AD0022D645 /* AppAuth.xcframework in Frameworks */,
+				103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +221,8 @@
 		D5787EB225E99F6400DFC2D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				103D91DC2A003085003E8892 /* Microblink.xcframework */,
+				103D91DB2A003085003E8892 /* PingOneVerify.xcframework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -219,6 +233,7 @@
 				D5787EE625E9A3D800DFC2D5 /* String+localized.swift */,
 				D5787EE125E9A3D800DFC2D5 /* UIColor+netHex.swift */,
 				D5787EE725E9A3D800DFC2D5 /* UIView+Border.swift */,
+				106B88F22A02AF5800A9A9A6 /* String+utilities.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -390,6 +405,7 @@
 				1C812DA029159826001CCCB6 /* Constants.swift in Sources */,
 				7BA52472229AA65200DD0E06 /* ManualPairingViewController.swift in Sources */,
 				D5787EE825E9A3D800DFC2D5 /* UIColor+netHex.swift in Sources */,
+				106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */,
 				D5787EEE25E9A3D800DFC2D5 /* UIView+Border.swift in Sources */,
 				7BA92C2A235F00600022D645 /* OIDCViewController.swift in Sources */,
 				7BA52470229AA65200DD0E06 /* AppDelegate.swift in Sources */,
