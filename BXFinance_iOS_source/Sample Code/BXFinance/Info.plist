@@ -41,6 +41,8 @@
 	<array>
 		<string>Rubik-Regular.ttf</string>
 		<string>Rubik-Bold.ttf</string>
+		<string>Arimo-Regular.ttf</string>
+		<string>Arimo-Bold.ttf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>
