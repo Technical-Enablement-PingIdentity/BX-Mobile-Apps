@@ -7,11 +7,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Rubik-Bold.ttf">
-            <string>Rubik-Bold</string>
+        <array key="Arimo-Bold.ttf">
+            <string>Arimo-Bold</string>
         </array>
-        <array key="Rubik-Regular.ttf">
-            <string>Rubik-Regular</string>
+        <array key="Arimo-Regular.ttf">
+            <string>Arimo-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -50,7 +50,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yuS-3M-fBv">
                                 <rect key="frame" x="93" y="610" width="188" height="37"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -58,7 +58,7 @@
                                 <rect key="frame" x="53" y="372" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.28627450980392155" green="0.49411764705882355" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Get Started     &gt;" backgroundImage="button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -125,7 +125,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6x-5p-By8">
                                 <rect key="frame" x="298" y="11" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="10"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -139,14 +139,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One Time Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbQ-Nl-Uks">
                                 <rect key="frame" x="49" y="67" width="277" height="54"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="764895" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APq-zP-IBW">
                                 <rect key="frame" x="36" y="98" width="302" height="67"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -154,7 +154,7 @@
                                 <rect key="frame" x="130" y="178" width="113" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35686274509803922" green="0.56470588235294117" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="13"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="New Passcode" backgroundImage="button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,7 +211,7 @@
                                 <rect key="frame" x="195" y="265" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40784313725490196" green="0.8901960784313725" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Approve" backgroundImage="button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -227,7 +227,7 @@
                                 <rect key="frame" x="21" y="265" width="158" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.61960784313725492" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Deny" backgroundImage="reject-button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -295,7 +295,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign On Authorization" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqW-9j-t9C">
                                 <rect key="frame" x="18" y="61" width="338" height="54"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -365,7 +365,7 @@
                                 <rect key="frame" x="53" y="264" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.40784313729999999" green="0.89019607840000003" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="10"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SIGN ON" backgroundImage="button-background">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -381,7 +381,7 @@
                                 <rect key="frame" x="53" y="230" width="269" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.2470588235" green="0.34901960780000002" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Arimo-Regular" family="Arimo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 <connections>
                                     <action selector="editingChanged:" destination="lD9-aa-mRZ" eventType="editingChanged" id="u1j-3j-aab"/>
@@ -390,7 +390,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the passcode displayed in the mobile app to sign on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60A-7R-Gbq">
                                 <rect key="frame" x="16" y="162" width="343" height="60"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -511,7 +511,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="bdd-as-Pal">
                                                     <rect key="frame" x="68" y="-4" width="275" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" name="Arimo-Regular" family="Arimo" pointSize="16"/>
                                                     <color key="textColor" red="0.24705882352941178" green="0.34901960784313724" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -530,7 +530,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="context message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0r-Xj-RjU">
                                 <rect key="frame" x="50" y="197" width="275" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rubik-Bold" family="Rubik" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Arimo-Bold" family="Arimo" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>

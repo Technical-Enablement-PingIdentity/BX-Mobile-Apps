@@ -13,6 +13,10 @@
 		103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B88F22A02AF5800A9A9A6 /* String+utilities.swift */; };
 		10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* BXFinance-Constants.swift */; };
+		10F454AC2A49F3200069130F /* Arimo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AA2A49F3200069130F /* Arimo-Regular.ttf */; };
+		10F454AD2A49F3200069130F /* Arimo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AA2A49F3200069130F /* Arimo-Regular.ttf */; };
+		10F454AE2A49F3200069130F /* Arimo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AB2A49F3200069130F /* Arimo-Bold.ttf */; };
+		10F454AF2A49F3200069130F /* Arimo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AB2A49F3200069130F /* Arimo-Bold.ttf */; };
 		1C812DA029159826001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C812DA129159A0A001CCCB6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C812D9F29159826001CCCB6 /* Constants.swift */; };
 		1C81FDF125F2E5C700122720 /* lib_colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C81FDF025F2E5C700122720 /* lib_colors.xcassets */; };
@@ -97,6 +101,8 @@
 		103D91DB2A003085003E8892 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PingOneVerify.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/PingOneVerify.xcframework"; sourceTree = "<group>"; };
 		103D91DC2A003085003E8892 /* Microblink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Microblink.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/Microblink.xcframework"; sourceTree = "<group>"; };
 		106B88F22A02AF5800A9A9A6 /* String+utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+utilities.swift"; sourceTree = "<group>"; };
+		10F454AA2A49F3200069130F /* Arimo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arimo-Regular.ttf"; path = "../../../../../../Downloads/arimo(1)/Arimo-Regular.ttf"; sourceTree = "<group>"; };
+		10F454AB2A49F3200069130F /* Arimo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arimo-Bold.ttf"; path = "../../../../../../Downloads/arimo(1)/Arimo-Bold.ttf"; sourceTree = "<group>"; };
 		1C34133725F34775006947AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1C812D9F29159826001CCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
@@ -207,6 +213,8 @@
 				7BA52473229AA65200DD0E06 /* Main.storyboard */,
 				1C92745427614489000BFD6F /* HomeButtonLabels.strings */,
 				7BA52476229AA65300DD0E06 /* Assets.xcassets */,
+				10F454AB2A49F3200069130F /* Arimo-Bold.ttf */,
+				10F454AA2A49F3200069130F /* Arimo-Regular.ttf */,
 				D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */,
 				D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */,
 				7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */,
@@ -348,6 +356,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F454AF2A49F3200069130F /* Arimo-Bold.ttf in Resources */,
+				10F454AD2A49F3200069130F /* Arimo-Regular.ttf in Resources */,
 				1C92744927612843000BFD6F /* lib_colors_bxhealth.xcassets in Resources */,
 				1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */,
 				1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */,
@@ -364,6 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F454AE2A49F3200069130F /* Arimo-Bold.ttf in Resources */,
+				10F454AC2A49F3200069130F /* Arimo-Regular.ttf in Resources */,
 				D5869155258BFFB700FAFD07 /* Rubik-Regular.ttf in Resources */,
 				7BA5247A229AA65300DD0E06 /* LaunchScreen.storyboard in Resources */,
 				1C92745527614489000BFD6F /* HomeButtonLabels.strings in Resources */,
@@ -637,7 +649,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 24;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -650,7 +662,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -667,7 +679,7 @@
 				CODE_SIGN_ENTITLEMENTS = BXFinance/SampleApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 22;
+				CURRENT_PROJECT_VERSION = 24;
 				DEVELOPMENT_TEAM = YZYUGL7S48;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -679,7 +691,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pingIdentity.p14c.bxfinance.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
