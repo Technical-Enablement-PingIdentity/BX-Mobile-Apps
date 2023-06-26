@@ -101,8 +101,8 @@
 		103D91DB2A003085003E8892 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PingOneVerify.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/PingOneVerify.xcframework"; sourceTree = "<group>"; };
 		103D91DC2A003085003E8892 /* Microblink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Microblink.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/Microblink.xcframework"; sourceTree = "<group>"; };
 		106B88F22A02AF5800A9A9A6 /* String+utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+utilities.swift"; sourceTree = "<group>"; };
-		10F454AA2A49F3200069130F /* Arimo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arimo-Regular.ttf"; path = "../../../../../../Downloads/arimo(1)/Arimo-Regular.ttf"; sourceTree = "<group>"; };
-		10F454AB2A49F3200069130F /* Arimo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arimo-Bold.ttf"; path = "../../../../../../Downloads/arimo(1)/Arimo-Bold.ttf"; sourceTree = "<group>"; };
+		10F454AA2A49F3200069130F /* Arimo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arimo-Regular.ttf"; sourceTree = "<group>"; };
+		10F454AB2A49F3200069130F /* Arimo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arimo-Bold.ttf"; sourceTree = "<group>"; };
 		1C34133725F34775006947AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1C812D9F29159826001CCCB6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1C81FDF025F2E5C700122720 /* lib_colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = lib_colors.xcassets; sourceTree = "<group>"; };
