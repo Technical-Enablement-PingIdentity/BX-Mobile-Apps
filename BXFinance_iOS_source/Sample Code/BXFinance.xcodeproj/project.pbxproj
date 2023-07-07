@@ -11,7 +11,15 @@
 		103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; };
 		103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		105EBAD52A58B109001C52FD /* PingOneSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */; };
+		105EBAD62A58B109001C52FD /* PingOneSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		105EBAD72A58B111001C52FD /* PingOneSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */; };
+		105EBAD82A58B111001C52FD /* PingOneSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		106B88F32A02AF5800A9A9A6 /* String+utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106B88F22A02AF5800A9A9A6 /* String+utilities.swift */; };
+		10A5CBA22A58B2DA004C01BA /* PingOneVerify.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; };
+		10A5CBA32A58B2DA004C01BA /* PingOneVerify.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DB2A003085003E8892 /* PingOneVerify.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		10A5CBA42A58B301004C01BA /* Microblink.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; };
+		10A5CBA52A58B301004C01BA /* Microblink.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 103D91DC2A003085003E8892 /* Microblink.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10C32F2523BA595F00FA5E71 /* BXFinance-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C20235F00440022D645 /* BXFinance-Constants.swift */; };
 		10F454AC2A49F3200069130F /* Arimo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AA2A49F3200069130F /* Arimo-Regular.ttf */; };
 		10F454AD2A49F3200069130F /* Arimo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F454AA2A49F3200069130F /* Arimo-Regular.ttf */; };
@@ -29,14 +37,12 @@
 		1C92740D27611C86000BFD6F /* ActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA92C26235F00570022D645 /* ActionItem.swift */; };
 		1C92741027611C86000BFD6F /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5787EE625E9A3D800DFC2D5 /* String+localized.swift */; };
 		1C92741927611C86000BFD6F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
-		1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
 		1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; };
 		1C92742C27611C86000BFD6F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869154258BFFB700FAFD07 /* Rubik-Regular.ttf */; };
 		1C92742D27611C86000BFD6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52478229AA65300DD0E06 /* LaunchScreen.storyboard */; };
 		1C92742F27611C86000BFD6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52481229AA69B00DD0E06 /* Localizable.strings */; };
 		1C92743127611C86000BFD6F /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5869156258BFFF500FAFD07 /* Rubik-Bold.ttf */; };
 		1C92743427611C86000BFD6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
-		1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA92C1D235F00350022D645 /* AppAuth.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1C92744527611EDC000BFD6F /* BXHealth.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C92744427611EDC000BFD6F /* BXHealth.xcassets */; };
 		1C92744627612441000BFD6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52476229AA65300DD0E06 /* Assets.xcassets */; };
@@ -49,8 +55,6 @@
 		1C927457276144AD000BFD6F /* HomeButtonLabels.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C927456276144AD000BFD6F /* HomeButtonLabels.strings */; };
 		1C92745B27615DE1000BFD6F /* BXHealth-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */; };
 		7B32BA9B23687A46008C1CF5 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B32BA9A23687A46008C1CF5 /* Alert.swift */; };
-		7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; };
-		7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81E4FA2338B7610040DC79 /* PingOne.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7BA52470229AA65200DD0E06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA5246F229AA65200DD0E06 /* AppDelegate.swift */; };
 		7BA52472229AA65200DD0E06 /* ManualPairingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA52471229AA65200DD0E06 /* ManualPairingViewController.swift */; };
 		7BA52475229AA65200DD0E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA52473229AA65200DD0E06 /* Main.storyboard */; };
@@ -75,8 +79,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1C92743627611C86000BFD6F /* PingOne.xcframework in Embed Frameworks */,
+				10A5CBA32A58B2DA004C01BA /* PingOneVerify.xcframework in Embed Frameworks */,
 				1C92743927611C86000BFD6F /* AppAuth.xcframework in Embed Frameworks */,
+				105EBAD62A58B109001C52FD /* PingOneSDK.xcframework in Embed Frameworks */,
+				10A5CBA52A58B301004C01BA /* Microblink.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,9 +94,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				103D91DE2A003086003E8892 /* PingOneVerify.xcframework in Embed Frameworks */,
-				7B81E4FF2338C3F00040DC79 /* PingOne.xcframework in Embed Frameworks */,
 				7BA92C2D235F00AD0022D645 /* AppAuth.xcframework in Embed Frameworks */,
 				103D91E02A003086003E8892 /* Microblink.xcframework in Embed Frameworks */,
+				105EBAD82A58B111001C52FD /* PingOneSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +106,7 @@
 /* Begin PBXFileReference section */
 		103D91DB2A003085003E8892 /* PingOneVerify.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PingOneVerify.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/PingOneVerify.xcframework"; sourceTree = "<group>"; };
 		103D91DC2A003085003E8892 /* Microblink.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Microblink.xcframework; path = "../../../../../pingone-verify-mobile-sdk-ios/SDK/Microblink.xcframework"; sourceTree = "<group>"; };
+		105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOneSDK.xcframework; sourceTree = "<group>"; };
 		106B88F22A02AF5800A9A9A6 /* String+utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+utilities.swift"; sourceTree = "<group>"; };
 		10F454AA2A49F3200069130F /* Arimo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arimo-Regular.ttf"; sourceTree = "<group>"; };
 		10F454AB2A49F3200069130F /* Arimo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arimo-Bold.ttf"; sourceTree = "<group>"; };
@@ -116,7 +123,6 @@
 		1C927456276144AD000BFD6F /* HomeButtonLabels.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeButtonLabels.strings; sourceTree = "<group>"; };
 		1C92745A27615DE1000BFD6F /* BXHealth-Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BXHealth-Constants.swift"; sourceTree = "<group>"; };
 		7B32BA9A23687A46008C1CF5 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		7B81E4FA2338B7610040DC79 /* PingOne.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = PingOne.xcframework; sourceTree = "<group>"; };
 		7B9C1FED23585AEF0069315F /* Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Debug-Info.plist"; sourceTree = "<group>"; };
 		7BA5246C229AA65200DD0E06 /* BXFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BXFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA5246F229AA65200DD0E06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,8 +150,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C92742027611C86000BFD6F /* PingOne.xcframework in Frameworks */,
+				10A5CBA22A58B2DA004C01BA /* PingOneVerify.xcframework in Frameworks */,
 				1C92742227611C86000BFD6F /* AppAuth.xcframework in Frameworks */,
+				105EBAD52A58B109001C52FD /* PingOneSDK.xcframework in Frameworks */,
+				10A5CBA42A58B301004C01BA /* Microblink.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,9 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				103D91DD2A003086003E8892 /* PingOneVerify.xcframework in Frameworks */,
-				7B81E4FE2338C3F00040DC79 /* PingOne.xcframework in Frameworks */,
 				7BA92C2C235F00AD0022D645 /* AppAuth.xcframework in Frameworks */,
 				103D91DF2A003086003E8892 /* Microblink.xcframework in Frameworks */,
+				105EBAD72A58B111001C52FD /* PingOneSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,8 +208,8 @@
 				D5787EFF25E9A47100DFC2D5 /* resources */,
 				D5787EEF25E9A3E600DFC2D5 /* views */,
 				D5787EE025E9A3CA00DFC2D5 /* extensions */,
-				7B81E4FA2338B7610040DC79 /* PingOne.xcframework */,
 				7BA92C1D235F00350022D645 /* AppAuth.xcframework */,
+				105EBAD22A58B106001C52FD /* PingOneSDK.xcframework */,
 				7BA52487229AA7FB00DD0E06 /* SampleApp.entitlements */,
 				7BA92C20235F00440022D645 /* BXFinance-Constants.swift */,
 				1C812D9F29159826001CCCB6 /* Constants.swift */,

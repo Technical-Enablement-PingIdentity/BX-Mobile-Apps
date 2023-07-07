@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PingOne
+import PingOneSDK
 
 class ManualPairingViewController: UIViewController, UITextFieldDelegate {
 
