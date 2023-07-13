@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PingOne
+import PingOneSDK
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var actionTableView: UITableView!

@@ -8,7 +8,7 @@
 
 import UIKit
 import AppAuth
-import PingOne
+import PingOneSDK
 import PingOneVerify_iOS
 
 class OIDCViewController: UIViewController {
